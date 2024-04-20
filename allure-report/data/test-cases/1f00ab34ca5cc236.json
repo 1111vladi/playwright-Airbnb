@@ -1,0 +1,320 @@
+{
+  "uid" : "1f00ab34ca5cc236",
+  "name" : "Reserve and Validate",
+  "fullName" : "roomReservationTests/reserveAStay.spec.js#Reservation Process @Web Reserve and Validate",
+  "historyId" : "3791bebfff417a988fa19bf6879817c7:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "time" : {
+    "start" : 1713633964175,
+    "stop" : 1713633964581,
+    "duration" : 406
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1713633964176,
+        "stop" : 1713633964178,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "beforeEach hook",
+        "time" : {
+          "start" : 1713633964176,
+          "stop" : 1713633964178,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "locator.click(div[data-section-id=\"BOOK_IT_SIDEBAR\"] >> div[data-testid=\"book-it-default\"] >> button[data-testid=\"homes-pdp-cta-btn\"])",
+      "time" : {
+        "start" : 1713633964179,
+        "stop" : 1713633964260,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBe",
+      "time" : {
+        "start" : 1713633964262,
+        "stop" : 1713633964262,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1713633964262,
+        "stop" : 1713633964581,
+        "duration" : 319
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "afterAll hook",
+        "time" : {
+          "start" : 1713633964264,
+          "stop" : 1713633964581,
+          "duration" : 317
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browser.close",
+          "time" : {
+            "start" : 1713633964269,
+            "stop" : 1713633964580,
+            "duration" : 311
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e34925e61a0a369b",
+      "name" : "stdout",
+      "source" : "e34925e61a0a369b.txt",
+      "type" : "text/plain",
+      "size" : 114
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > chromium > roomReservationTests\\reserveAStay.spec.js > Reservation Process @Web"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-C5T3T2P"
+  }, {
+    "name" : "thread",
+    "value" : "DESKTOP-C5T3T2P-3368-playwright-worker-0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "roomReservationTests\\reserveAStay.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Reservation Process @Web"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "chromium"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9a75bb40ddef52d8",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633844585,
+        "stop" : 1713633844586,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5972faf11c2c2046",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1713633778421,
+        "stop" : 1713633778422,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "24b44e7cc84021c4",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633689144,
+        "stop" : 1713633689144,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2cdff08602ca0078",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633174140,
+        "stop" : 1713633174140,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "20c50c31abca1859",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633106665,
+        "stop" : 1713633106665,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "19789f6cd38dcff",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633079707,
+        "stop" : 1713633079707,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "996b763bc6bec222",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632783040,
+        "stop" : 1713632783041,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d765291d6cf6409",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632732813,
+        "stop" : 1713632732813,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "78980b7c20c57e00",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632654247,
+        "stop" : 1713632654247,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b961677a70fdc7a1",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632638833,
+        "stop" : 1713632638833,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3e2c4e6ec4903560",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632605600,
+        "stop" : 1713632605600,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4f8b673c0fcaf3b7",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632573841,
+        "stop" : 1713632573841,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "60611920db181f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713632136110,
+        "stop" : 1713632136521,
+        "duration" : 411
+      }
+    }, {
+      "uid" : "dcb46041ad76d3bf",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632105036,
+        "stop" : 1713632105036,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9ac0d54d1716a674",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713631914540,
+        "stop" : 1713631914902,
+        "duration" : 362
+      }
+    }, {
+      "uid" : "5decba52466b3e4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713631868097,
+        "stop" : 1713631868500,
+        "duration" : 403
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1f00ab34ca5cc236.json",
+  "parameterValues" : [ "chromium" ]
+}

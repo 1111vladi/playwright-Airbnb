@@ -1,0 +1,121 @@
+[ {
+  "uid" : "a0f7ece61f501ddc",
+  "name" : "Search for a Stay",
+  "time" : {
+    "start" : 1713630759914,
+    "stop" : 1713630767442,
+    "duration" : 7528
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2517fb0db7ab4371",
+  "name" : "Adjust and Verify Guest Count",
+  "time" : {
+    "start" : 1713630774076,
+    "stop" : 1713630774727,
+    "duration" : 651
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "77bf9ce8dcd322c6",
+  "name" : "Select a Listing",
+  "time" : {
+    "start" : 1713633956882,
+    "stop" : 1713633962839,
+    "duration" : 5957
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fdc1248337c2ba9",
+  "name" : "Search for a Stay",
+  "time" : {
+    "start" : 1713633950806,
+    "stop" : 1713633956881,
+    "duration" : 6075
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5165eab8d2c83e05",
+  "name" : "Select a Listing",
+  "time" : {
+    "start" : 1713630767444,
+    "stop" : 1713630773660,
+    "duration" : 6216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f00ab34ca5cc236",
+  "name" : "Reserve and Validate",
+  "time" : {
+    "start" : 1713633964175,
+    "stop" : 1713633964581,
+    "duration" : 406
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42ed4e2f9212eb26",
+  "name" : "Confirm Booking Details",
+  "time" : {
+    "start" : 1713633962840,
+    "stop" : 1713633962947,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1335a412dfce68e7",
+  "name" : "Change Booking Dates",
+  "time" : {
+    "start" : 1713630774728,
+    "stop" : 1713630774732,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f34940a53f8a8256",
+  "name" : "Change Booking Dates",
+  "time" : {
+    "start" : 1713633964172,
+    "stop" : 1713633964175,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "498041e3490120f2",
+  "name" : "Adjust and Verify Guest Count",
+  "time" : {
+    "start" : 1713633962948,
+    "stop" : 1713633964171,
+    "duration" : 1223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ed97cf0205ae56c",
+  "name" : "Reserve and Validate",
+  "time" : {
+    "start" : 1713630774732,
+    "stop" : 1713630775169,
+    "duration" : 437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "21a3ada4af753794",
+  "name" : "Confirm Booking Details",
+  "time" : {
+    "start" : 1713630773661,
+    "stop" : 1713630774075,
+    "duration" : 414
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

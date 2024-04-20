@@ -1,0 +1,1573 @@
+{
+  "uid" : "ecda9e528fb35ab0",
+  "name" : "Search for a Stay",
+  "fullName" : "roomReservationTests/reserveAStay.spec.js#Reservation Process Search for a Stay",
+  "historyId" : "bccc5d7626e10763bb4b4de085369d60:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "time" : {
+    "start" : 1713630711986,
+    "stop" : 1713630717187,
+    "duration" : 5201
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1713630711990,
+        "stop" : 1713630714865,
+        "duration" : 2875
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "beforeAll hook",
+        "time" : {
+          "start" : 1713630711990,
+          "stop" : 1713630714860,
+          "duration" : 2870
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "fixture: browser",
+          "time" : {
+            "start" : 1713630711997,
+            "stop" : 1713630712265,
+            "duration" : 268
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "browserType.launch",
+            "time" : {
+              "start" : 1713630712001,
+              "stop" : 1713630712265,
+              "duration" : 264
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        }, {
+          "name" : "browser.newContext",
+          "time" : {
+            "start" : 1713630712272,
+            "stop" : 1713630712285,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "browserContext.newPage",
+          "time" : {
+            "start" : 1713630712294,
+            "stop" : 1713630712472,
+            "duration" : 178
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "page.goto(/)",
+          "time" : {
+            "start" : 1713630712478,
+            "stop" : 1713630714858,
+            "duration" : 2380
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 5,
+        "hasContent" : true
+      }, {
+        "name" : "beforeEach hook",
+        "time" : {
+          "start" : 1713630714862,
+          "stop" : 1713630714865,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 7,
+      "hasContent" : true
+    }, {
+      "name" : "locator.click(input[id = \"bigsearch-query-location-input\"])",
+      "time" : {
+        "start" : 1713630714872,
+        "stop" : 1713630715109,
+        "duration" : 237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.fill(input[id = \"bigsearch-query-location-input\"])",
+      "time" : {
+        "start" : 1713630715112,
+        "stop" : 1713630715174,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[id^= \"bigsearch-query-location-suggestion\"] >> nth=0)",
+      "time" : {
+        "start" : 1713630715178,
+        "stop" : 1713630715230,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[id^= \"bigsearch-query-location-suggestion\"])",
+      "time" : {
+        "start" : 1713630715232,
+        "stop" : 1713630715235,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.textContent(div[id^= \"bigsearch-query-location-suggestion\"] >> nth=0)",
+      "time" : {
+        "start" : 1713630715238,
+        "stop" : 1713630715242,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(div[id^= \"bigsearch-query-location-suggestion\"] >> nth=0)",
+      "time" : {
+        "start" : 1713630715245,
+        "stop" : 1713630715488,
+        "duration" : 243
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=0)",
+      "time" : {
+        "start" : 1713630715491,
+        "stop" : 1713630715515,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div)",
+      "time" : {
+        "start" : 1713630715517,
+        "stop" : 1713630715523,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=0)",
+      "time" : {
+        "start" : 1713630715525,
+        "stop" : 1713630715529,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=1)",
+      "time" : {
+        "start" : 1713630715531,
+        "stop" : 1713630715535,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=2)",
+      "time" : {
+        "start" : 1713630715537,
+        "stop" : 1713630715545,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=3)",
+      "time" : {
+        "start" : 1713630715546,
+        "stop" : 1713630715552,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=4)",
+      "time" : {
+        "start" : 1713630715555,
+        "stop" : 1713630715561,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=5)",
+      "time" : {
+        "start" : 1713630715564,
+        "stop" : 1713630715569,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=6)",
+      "time" : {
+        "start" : 1713630715572,
+        "stop" : 1713630715577,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=7)",
+      "time" : {
+        "start" : 1713630715579,
+        "stop" : 1713630715582,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=8)",
+      "time" : {
+        "start" : 1713630715584,
+        "stop" : 1713630715613,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=9)",
+      "time" : {
+        "start" : 1713630715615,
+        "stop" : 1713630715620,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=10)",
+      "time" : {
+        "start" : 1713630715621,
+        "stop" : 1713630715626,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=11)",
+      "time" : {
+        "start" : 1713630715628,
+        "stop" : 1713630715647,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=12)",
+      "time" : {
+        "start" : 1713630715649,
+        "stop" : 1713630715665,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=13)",
+      "time" : {
+        "start" : 1713630715667,
+        "stop" : 1713630715678,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=14)",
+      "time" : {
+        "start" : 1713630715680,
+        "stop" : 1713630715682,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=15)",
+      "time" : {
+        "start" : 1713630715683,
+        "stop" : 1713630715690,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=16)",
+      "time" : {
+        "start" : 1713630715692,
+        "stop" : 1713630715694,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=17)",
+      "time" : {
+        "start" : 1713630715695,
+        "stop" : 1713630715700,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=18)",
+      "time" : {
+        "start" : 1713630715701,
+        "stop" : 1713630715703,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=19)",
+      "time" : {
+        "start" : 1713630715705,
+        "stop" : 1713630715707,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=20)",
+      "time" : {
+        "start" : 1713630715708,
+        "stop" : 1713630715710,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=20)",
+      "time" : {
+        "start" : 1713630715712,
+        "stop" : 1713630715844,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=0)",
+      "time" : {
+        "start" : 1713630715846,
+        "stop" : 1713630715914,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div)",
+      "time" : {
+        "start" : 1713630715917,
+        "stop" : 1713630715927,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=0)",
+      "time" : {
+        "start" : 1713630715929,
+        "stop" : 1713630715972,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=1)",
+      "time" : {
+        "start" : 1713630715974,
+        "stop" : 1713630715978,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=2)",
+      "time" : {
+        "start" : 1713630715981,
+        "stop" : 1713630715985,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=3)",
+      "time" : {
+        "start" : 1713630715988,
+        "stop" : 1713630715991,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=4)",
+      "time" : {
+        "start" : 1713630715992,
+        "stop" : 1713630715995,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=5)",
+      "time" : {
+        "start" : 1713630715997,
+        "stop" : 1713630715999,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=6)",
+      "time" : {
+        "start" : 1713630716000,
+        "stop" : 1713630716002,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=7)",
+      "time" : {
+        "start" : 1713630716004,
+        "stop" : 1713630716006,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=8)",
+      "time" : {
+        "start" : 1713630716007,
+        "stop" : 1713630716010,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=9)",
+      "time" : {
+        "start" : 1713630716012,
+        "stop" : 1713630716015,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=10)",
+      "time" : {
+        "start" : 1713630716016,
+        "stop" : 1713630716019,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=11)",
+      "time" : {
+        "start" : 1713630716020,
+        "stop" : 1713630716022,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=12)",
+      "time" : {
+        "start" : 1713630716024,
+        "stop" : 1713630716026,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=13)",
+      "time" : {
+        "start" : 1713630716028,
+        "stop" : 1713630716030,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=14)",
+      "time" : {
+        "start" : 1713630716032,
+        "stop" : 1713630716035,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=15)",
+      "time" : {
+        "start" : 1713630716037,
+        "stop" : 1713630716039,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=16)",
+      "time" : {
+        "start" : 1713630716041,
+        "stop" : 1713630716044,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=17)",
+      "time" : {
+        "start" : 1713630716046,
+        "stop" : 1713630716049,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=18)",
+      "time" : {
+        "start" : 1713630716051,
+        "stop" : 1713630716054,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=19)",
+      "time" : {
+        "start" : 1713630716055,
+        "stop" : 1713630716059,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=20)",
+      "time" : {
+        "start" : 1713630716060,
+        "stop" : 1713630716063,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=21)",
+      "time" : {
+        "start" : 1713630716064,
+        "stop" : 1713630716066,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=22)",
+      "time" : {
+        "start" : 1713630716068,
+        "stop" : 1713630716069,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=23)",
+      "time" : {
+        "start" : 1713630716071,
+        "stop" : 1713630716073,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(//div[@aria-label = \"Calendar\"]//*[text() = \"April 2024\"]/../../../../div/table[@role = \"presentation\"]/tbody/tr/td/div >> nth=23)",
+      "time" : {
+        "start" : 1713630716074,
+        "stop" : 1713630716214,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(div[data-testid = \"structured-search-input-field-guests-button\"])",
+      "time" : {
+        "start" : 1713630716217,
+        "stop" : 1713630716519,
+        "duration" : 302
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.textContent(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> span[data-testid=\"stepper-adults-value\"])",
+      "time" : {
+        "start" : 1713630716521,
+        "stop" : 1713630716526,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> nth=0)",
+      "time" : {
+        "start" : 1713630716529,
+        "stop" : 1713630716534,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div)",
+      "time" : {
+        "start" : 1713630716536,
+        "stop" : 1713630716540,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> nth=0 >> button[data-testid*= \"increase\"])",
+      "time" : {
+        "start" : 1713630716541,
+        "stop" : 1713630716545,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> nth=0 >> button[data-testid*= \"increase\"])",
+      "time" : {
+        "start" : 1713630716546,
+        "stop" : 1713630716600,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> nth=0 >> button[data-testid*= \"increase\"])",
+      "time" : {
+        "start" : 1713630716601,
+        "stop" : 1713630716648,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.textContent(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> span[data-testid=\"stepper-children-value\"])",
+      "time" : {
+        "start" : 1713630716649,
+        "stop" : 1713630716653,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> nth=0)",
+      "time" : {
+        "start" : 1713630716655,
+        "stop" : 1713630716660,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div)",
+      "time" : {
+        "start" : 1713630716661,
+        "stop" : 1713630716664,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> nth=0 >> button[data-testid*= \"increase\"])",
+      "time" : {
+        "start" : 1713630716665,
+        "stop" : 1713630716669,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> nth=1 >> button[data-testid*= \"increase\"])",
+      "time" : {
+        "start" : 1713630716670,
+        "stop" : 1713630716674,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(div[data-testid = \"structured-search-input-field-guests-panel\"] >>  > div > div >> nth=1 >> button[data-testid*= \"increase\"])",
+      "time" : {
+        "start" : 1713630716677,
+        "stop" : 1713630716726,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(button[data-testid = \"structured-search-input-search-button\"])",
+      "time" : {
+        "start" : 1713630716727,
+        "stop" : 1713630716822,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> nth=0)",
+      "time" : {
+        "start" : 1713630716825,
+        "stop" : 1713630716942,
+        "duration" : 117
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"])",
+      "time" : {
+        "start" : 1713630716944,
+        "stop" : 1713630716954,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630716958,
+        "stop" : 1713630716979,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630716981,
+        "stop" : 1713630716991,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630716993,
+        "stop" : 1713630717004,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717006,
+        "stop" : 1713630717018,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717020,
+        "stop" : 1713630717053,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717055,
+        "stop" : 1713630717068,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717070,
+        "stop" : 1713630717081,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717083,
+        "stop" : 1713630717097,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717099,
+        "stop" : 1713630717105,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717106,
+        "stop" : 1713630717116,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717118,
+        "stop" : 1713630717125,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717127,
+        "stop" : 1713630717132,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717135,
+        "stop" : 1713630717141,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717143,
+        "stop" : 1713630717149,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717151,
+        "stop" : 1713630717157,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717158,
+        "stop" : 1713630717168,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717170,
+        "stop" : 1713630717175,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeVisible",
+      "time" : {
+        "start" : 1713630717177,
+        "stop" : 1713630717183,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1713630717184,
+        "stop" : 1713630717185,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "54c9785d6e0d519c",
+      "name" : "stdout",
+      "source" : "54c9785d6e0d519c.txt",
+      "type" : "text/plain",
+      "size" : 358
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 100,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > chromium > roomReservationTests\\reserveAStay.spec.js > Reservation Process"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-C5T3T2P"
+  }, {
+    "name" : "thread",
+    "value" : "DESKTOP-C5T3T2P-8712-playwright-worker-0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "roomReservationTests\\reserveAStay.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Reservation Process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "chromium"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ecda9e528fb35ab0.json",
+  "parameterValues" : [ "chromium" ]
+}

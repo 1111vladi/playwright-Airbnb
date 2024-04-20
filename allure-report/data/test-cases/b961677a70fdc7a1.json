@@ -1,0 +1,61 @@
+{
+  "uid" : "b961677a70fdc7a1",
+  "name" : "Reserve and Validate",
+  "fullName" : "roomReservationTests/reserveAStay.spec.js#Reservation Process @Web Reserve and Validate",
+  "historyId" : "3791bebfff417a988fa19bf6879817c7:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "time" : {
+    "start" : 1713632638833,
+    "stop" : 1713632638833,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > chromium > roomReservationTests\\reserveAStay.spec.js > Reservation Process @Web"
+  }, {
+    "name" : "ALLURE_ID",
+    "value" : "-1"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-C5T3T2P"
+  }, {
+    "name" : "thread",
+    "value" : "DESKTOP-C5T3T2P-19236-playwright-worker-0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "roomReservationTests\\reserveAStay.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Reservation Process @Web"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "chromium"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b961677a70fdc7a1.json",
+  "parameterValues" : [ "chromium" ]
+}

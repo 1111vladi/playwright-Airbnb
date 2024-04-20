@@ -1,0 +1,33 @@
+{
+  "name": "ibexhomeassignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test reserveAStay.spec.js --project=chromium --workers=1 --reporter=line,allure-playwright",
+    "test2": "npx playwright test UIBasicstest.spec --project=chromium",
+    "openUi": "npx playwright test --ui",
+    "showReport": "npx playwright show-report",
+    "allTests": "npx playwright test",
+    "generateAllure": "allure generate ./allure-results --clean",
+    "allureReport": "allure open ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-proposal-export-default-from": "^7.24.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.24.4",
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7",
+    "allure-playwright": "^2.15.1",
+    "babel-plugin-module-resolver": "^5.0.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1"
+  }
+}

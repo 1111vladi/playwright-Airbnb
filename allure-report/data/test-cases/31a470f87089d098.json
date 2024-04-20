@@ -1,0 +1,263 @@
+{
+  "uid" : "31a470f87089d098",
+  "name" : "Confirm Booking Details",
+  "fullName" : "roomReservationTests/reserveAStay.spec.js#Reservation Process Confirm Booking Details",
+  "historyId" : "50964e5f580484dcf82f6a7f7a7b7459:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "time" : {
+    "start" : 1713630723354,
+    "stop" : 1713630726501,
+    "duration" : 3147
+  },
+  "status" : "failed",
+  "statusMessage" : "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://www.airbnb.com/\", waiting until \"load\"\n",
+  "statusTrace" : "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://www.airbnb.com/\", waiting until \"load\"\n\n    at setup (C:\\Users\\user\\WebstormProjects\\ibexHomeAssignment\\src\\main\\utilities\\commonOps.js:7:16)\n    at C:\\Users\\user\\WebstormProjects\\ibexHomeAssignment\\src\\tests\\roomReservationTests\\reserveAStay.spec.js:11:24",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://www.airbnb.com/\", waiting until \"load\"\n",
+    "statusTrace" : "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://www.airbnb.com/\", waiting until \"load\"\n\n    at setup (C:\\Users\\user\\WebstormProjects\\ibexHomeAssignment\\src\\main\\utilities\\commonOps.js:7:16)\n    at C:\\Users\\user\\WebstormProjects\\ibexHomeAssignment\\src\\tests\\roomReservationTests\\reserveAStay.spec.js:11:24",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1713630723357,
+        "stop" : 1713630726287,
+        "duration" : 2930
+      },
+      "status" : "failed",
+      "statusMessage" : "\"beforeAll\" hook timeout of 60000ms exceeded.",
+      "statusTrace" : "\"beforeAll\" hook timeout of 60000ms exceeded.\n    at C:\\Users\\user\\WebstormProjects\\ibexHomeAssignment\\src\\tests\\roomReservationTests\\reserveAStay.spec.js:10:6",
+      "steps" : [ {
+        "name" : "beforeAll hook",
+        "time" : {
+          "start" : 1713630723358,
+          "stop" : 1713630726284,
+          "duration" : 2926
+        },
+        "status" : "failed",
+        "statusMessage" : "\"beforeAll\" hook timeout of 60000ms exceeded.",
+        "statusTrace" : "\"beforeAll\" hook timeout of 60000ms exceeded.\n    at C:\\Users\\user\\WebstormProjects\\ibexHomeAssignment\\src\\tests\\roomReservationTests\\reserveAStay.spec.js:10:6",
+        "steps" : [ {
+          "name" : "fixture: browser",
+          "time" : {
+            "start" : 1713630723365,
+            "stop" : 1713630723645,
+            "duration" : 280
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "browserType.launch",
+            "time" : {
+              "start" : 1713630723369,
+              "stop" : 1713630723645,
+              "duration" : 276
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        }, {
+          "name" : "browser.newContext",
+          "time" : {
+            "start" : 1713630723651,
+            "stop" : 1713630723664,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "browserContext.newPage",
+          "time" : {
+            "start" : 1713630723675,
+            "stop" : 1713630723870,
+            "duration" : 195
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "page.goto(/)",
+          "time" : {
+            "start" : 1713630723876,
+            "stop" : 1713630726302,
+            "duration" : 2426
+          },
+          "status" : "failed",
+          "statusMessage" : "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://www.airbnb.com/\", waiting until \"load\"\n",
+          "statusTrace" : "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://www.airbnb.com/\", waiting until \"load\"\n\n    at setup (C:\\Users\\user\\WebstormProjects\\ibexHomeAssignment\\src\\main\\utilities\\commonOps.js:7:16)\n    at C:\\Users\\user\\WebstormProjects\\ibexHomeAssignment\\src\\tests\\roomReservationTests\\reserveAStay.spec.js:11:24",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "stepsCount" : 5,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 6,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1713630726287,
+        "stop" : 1713630726495,
+        "duration" : 208
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "afterAll hook",
+        "time" : {
+          "start" : 1713630726287,
+          "stop" : 1713630726495,
+          "duration" : 208
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browser.close",
+          "time" : {
+            "start" : 1713630726291,
+            "stop" : 1713630726494,
+            "duration" : 203
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Worker Cleanup",
+      "time" : {
+        "start" : 1713630726495,
+        "stop" : 1713630726498,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture: browser",
+        "time" : {
+          "start" : 1713630726496,
+          "stop" : 1713630726498,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "cd7e5bad0ed0b30d",
+      "name" : "stdout",
+      "source" : "cd7e5bad0ed0b30d.txt",
+      "type" : "text/plain",
+      "size" : 228
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 12,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > chromium > roomReservationTests\\reserveAStay.spec.js > Reservation Process"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-C5T3T2P"
+  }, {
+    "name" : "thread",
+    "value" : "DESKTOP-C5T3T2P-8712-playwright-worker-0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "roomReservationTests\\reserveAStay.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Reservation Process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "chromium"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "31a470f87089d098.json",
+  "parameterValues" : [ "chromium" ]
+}

@@ -1,0 +1,7 @@
+Highest rated room:  {
+  id: 'title_860923574326598327',
+  status: 'success',
+  roomName: 'Apartment in Amsterdam',
+  subTitle: 'Lovely modern apartment in Amsterdam with garden',
+  rating: '5.0'
+}

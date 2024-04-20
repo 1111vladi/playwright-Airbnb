@@ -1,0 +1,298 @@
+{
+  "uid" : "42ed4e2f9212eb26",
+  "name" : "Confirm Booking Details",
+  "fullName" : "roomReservationTests/reserveAStay.spec.js#Reservation Process @Web Confirm Booking Details",
+  "historyId" : "10e98d84ee604f548b301457751e0be5:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "time" : {
+    "start" : 1713633962840,
+    "stop" : 1713633962947,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1713633962840,
+        "stop" : 1713633962842,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "beforeEach hook",
+        "time" : {
+          "start" : 1713633962840,
+          "stop" : 1713633962842,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "expect.toHaveText",
+      "time" : {
+        "start" : 1713633962845,
+        "stop" : 1713633962897,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveText",
+      "time" : {
+        "start" : 1713633962898,
+        "stop" : 1713633962933,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveText",
+      "time" : {
+        "start" : 1713633962935,
+        "stop" : 1713633962946,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1713633962946,
+        "stop" : 1713633962947,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > chromium > roomReservationTests\\reserveAStay.spec.js > Reservation Process @Web"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-C5T3T2P"
+  }, {
+    "name" : "thread",
+    "value" : "DESKTOP-C5T3T2P-3368-playwright-worker-0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "roomReservationTests\\reserveAStay.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Reservation Process @Web"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "chromium"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "831dec8ef5f1b92c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713633819825,
+        "stop" : 1713633819915,
+        "duration" : 90
+      }
+    }, {
+      "uid" : "4b567ea637490822",
+      "status" : "failed",
+      "statusDetails" : "TypeError: Cannot read properties of undefined (reading 'verifyReservationInfo')",
+      "time" : {
+        "start" : 1713633774063,
+        "stop" : 1713633777016,
+        "duration" : 2953
+      }
+    }, {
+      "uid" : "a5ebf2f0ffdd1254",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633689142,
+        "stop" : 1713633689142,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b59baf7b0e3a28",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633174138,
+        "stop" : 1713633174138,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e438de783fa668b2",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633106663,
+        "stop" : 1713633106664,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3cc452641a45d723",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713633079704,
+        "stop" : 1713633079704,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ad67571fe1d0eed7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713632782406,
+        "stop" : 1713632782475,
+        "duration" : 69
+      }
+    }, {
+      "uid" : "181f44a0db5ed3a5",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632732811,
+        "stop" : 1713632732811,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5c5cd872339aad56",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632654244,
+        "stop" : 1713632654244,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "905c31fcf6bf3e67",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632638831,
+        "stop" : 1713632638832,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c4baec194a6443e1",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632605596,
+        "stop" : 1713632605596,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "392119d68aaf38ad",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632573839,
+        "stop" : 1713632573840,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b73cf700f3114609",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713632134951,
+        "stop" : 1713632135361,
+        "duration" : 410
+      }
+    }, {
+      "uid" : "702c8157a7c1764f",
+      "status" : "skipped",
+      "statusDetails" : "This test was skipped due to test setup error. Check you setup scripts to fix the issue.",
+      "time" : {
+        "start" : 1713632105034,
+        "stop" : 1713632105034,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6563d9d21072c214",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713631913118,
+        "stop" : 1713631913150,
+        "duration" : 32
+      }
+    }, {
+      "uid" : "2cdd16243276be1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713631867019,
+        "stop" : 1713631867415,
+        "duration" : 396
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "42ed4e2f9212eb26.json",
+  "parameterValues" : [ "chromium" ]
+}

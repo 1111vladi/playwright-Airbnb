@@ -1,0 +1,177 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "chromium",
+    "children" : [ {
+      "name" : "roomReservationTests\\reserveAStay.spec.js",
+      "children" : [ {
+        "name" : "Reservation Process",
+        "children" : [ {
+          "name" : "Search for a Stay",
+          "uid" : "a0f7ece61f501ddc",
+          "parentUid" : "eccf4d6e8744ef303ccdd9d278d746c0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713630759914,
+            "stop" : 1713630767442,
+            "duration" : 7528
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Select a Listing",
+          "uid" : "5165eab8d2c83e05",
+          "parentUid" : "eccf4d6e8744ef303ccdd9d278d746c0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713630767444,
+            "stop" : 1713630773660,
+            "duration" : 6216
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Confirm Booking Details",
+          "uid" : "21a3ada4af753794",
+          "parentUid" : "eccf4d6e8744ef303ccdd9d278d746c0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713630773661,
+            "stop" : 1713630774075,
+            "duration" : 414
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Adjust and Verify Guest Count",
+          "uid" : "2517fb0db7ab4371",
+          "parentUid" : "eccf4d6e8744ef303ccdd9d278d746c0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713630774076,
+            "stop" : 1713630774727,
+            "duration" : 651
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Change Booking Dates",
+          "uid" : "1335a412dfce68e7",
+          "parentUid" : "eccf4d6e8744ef303ccdd9d278d746c0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713630774728,
+            "stop" : 1713630774732,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Reserve and Validate",
+          "uid" : "8ed97cf0205ae56c",
+          "parentUid" : "eccf4d6e8744ef303ccdd9d278d746c0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713630774732,
+            "stop" : 1713630775169,
+            "duration" : 437
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        } ],
+        "uid" : "eccf4d6e8744ef303ccdd9d278d746c0"
+      }, {
+        "name" : "Reservation Process @Web",
+        "children" : [ {
+          "name" : "Search for a Stay",
+          "uid" : "7fdc1248337c2ba9",
+          "parentUid" : "96a2c49f8498f54062fb94e98e821e56",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713633950806,
+            "stop" : 1713633956881,
+            "duration" : 6075
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Select a Listing",
+          "uid" : "77bf9ce8dcd322c6",
+          "parentUid" : "96a2c49f8498f54062fb94e98e821e56",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713633956882,
+            "stop" : 1713633962839,
+            "duration" : 5957
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Confirm Booking Details",
+          "uid" : "42ed4e2f9212eb26",
+          "parentUid" : "96a2c49f8498f54062fb94e98e821e56",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713633962840,
+            "stop" : 1713633962947,
+            "duration" : 107
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Adjust and Verify Guest Count",
+          "uid" : "498041e3490120f2",
+          "parentUid" : "96a2c49f8498f54062fb94e98e821e56",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713633962948,
+            "stop" : 1713633964171,
+            "duration" : 1223
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Change Booking Dates",
+          "uid" : "f34940a53f8a8256",
+          "parentUid" : "96a2c49f8498f54062fb94e98e821e56",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713633964172,
+            "stop" : 1713633964175,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        }, {
+          "name" : "Reserve and Validate",
+          "uid" : "1f00ab34ca5cc236",
+          "parentUid" : "96a2c49f8498f54062fb94e98e821e56",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713633964175,
+            "stop" : 1713633964581,
+            "duration" : 406
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromium" ]
+        } ],
+        "uid" : "96a2c49f8498f54062fb94e98e821e56"
+      } ],
+      "uid" : "cd4c57a03a88a8d5288ce7c5aec544c5"
+    } ],
+    "uid" : "36c900977e1d8b81a2c6893cc82bfc01"
+  } ]
+}

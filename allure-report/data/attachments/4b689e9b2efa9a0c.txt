@@ -1,0 +1,7 @@
+Highest rated room:  {
+  id: 'title_9954340',
+  status: 'success',
+  roomName: 'Loft in Amsterdam',
+  subTitle: 'High-end design loft (190m2)',
+  rating: '5.0'
+}

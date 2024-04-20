@@ -1,0 +1,1575 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-C5T3T2P",
+    "children" : [ {
+      "name" : "DESKTOP-C5T3T2P-17492-playwright-worker-0",
+      "children" : [ {
+        "name" : "Change Booking Dates",
+        "uid" : "2c135b0491b2e89b",
+        "parentUid" : "1885f73802f790c368c11dcd8008e68e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633106664,
+          "stop" : 1713633106665,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "cf7daf041f6534d9",
+        "parentUid" : "1885f73802f790c368c11dcd8008e68e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633106664,
+          "stop" : 1713633106664,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "e438de783fa668b2",
+        "parentUid" : "1885f73802f790c368c11dcd8008e68e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633106663,
+          "stop" : 1713633106664,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "c573e444c99e7410",
+        "parentUid" : "1885f73802f790c368c11dcd8008e68e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633106663,
+          "stop" : 1713633106663,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "20c50c31abca1859",
+        "parentUid" : "1885f73802f790c368c11dcd8008e68e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633106665,
+          "stop" : 1713633106665,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "6ad42dc07e5c57c",
+        "parentUid" : "1885f73802f790c368c11dcd8008e68e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713633097023,
+          "stop" : 1713633106653,
+          "duration" : 9630
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "1885f73802f790c368c11dcd8008e68e"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-3368-playwright-worker-0",
+      "children" : [ {
+        "name" : "Change Booking Dates",
+        "uid" : "f34940a53f8a8256",
+        "parentUid" : "5decc0db3851cdc474bce70d0e8cf10a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633964172,
+          "stop" : 1713633964175,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "7fdc1248337c2ba9",
+        "parentUid" : "5decc0db3851cdc474bce70d0e8cf10a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633950806,
+          "stop" : 1713633956881,
+          "duration" : 6075
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "498041e3490120f2",
+        "parentUid" : "5decc0db3851cdc474bce70d0e8cf10a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633962948,
+          "stop" : 1713633964171,
+          "duration" : 1223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "1f00ab34ca5cc236",
+        "parentUid" : "5decc0db3851cdc474bce70d0e8cf10a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633964175,
+          "stop" : 1713633964581,
+          "duration" : 406
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "77bf9ce8dcd322c6",
+        "parentUid" : "5decc0db3851cdc474bce70d0e8cf10a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633956882,
+          "stop" : 1713633962839,
+          "duration" : 5957
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "42ed4e2f9212eb26",
+        "parentUid" : "5decc0db3851cdc474bce70d0e8cf10a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633962840,
+          "stop" : 1713633962947,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "5decc0db3851cdc474bce70d0e8cf10a"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-688-playwright-worker-0",
+      "children" : [ {
+        "name" : "Confirm Booking Details",
+        "uid" : "4b567ea637490822",
+        "parentUid" : "97b070b7160110cdef6696c53bb0291e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713633774063,
+          "stop" : 1713633777016,
+          "duration" : 2953
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "7dd8e4a251b176dc",
+        "parentUid" : "97b070b7160110cdef6696c53bb0291e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633703125,
+          "stop" : 1713633713194,
+          "duration" : 10069
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "a5683c8a6afb3e58",
+        "parentUid" : "97b070b7160110cdef6696c53bb0291e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713633777590,
+          "stop" : 1713633778418,
+          "duration" : 828
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "2c4caeaed886bb9f",
+        "parentUid" : "97b070b7160110cdef6696c53bb0291e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1713633713199,
+          "stop" : 1713633773416,
+          "duration" : 60217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "97b070b7160110cdef6696c53bb0291e"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-6368-playwright-worker-0",
+      "children" : [ {
+        "name" : "Search for a Stay",
+        "uid" : "c92e011e79ebaa7",
+        "parentUid" : "6a800889873681277b423a57c6a12970",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631901652,
+          "stop" : 1713631907267,
+          "duration" : 5615
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "6563d9d21072c214",
+        "parentUid" : "6a800889873681277b423a57c6a12970",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631913118,
+          "stop" : 1713631913150,
+          "duration" : 32
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "1fd2d6e79c3da895",
+        "parentUid" : "6a800889873681277b423a57c6a12970",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631907268,
+          "stop" : 1713631913118,
+          "duration" : 5850
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "d23c9fba857627b9",
+        "parentUid" : "6a800889873681277b423a57c6a12970",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631913151,
+          "stop" : 1713631914535,
+          "duration" : 1384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "7a5fc7cdb1227f04",
+        "parentUid" : "6a800889873681277b423a57c6a12970",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631914537,
+          "stop" : 1713631914539,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "9ac0d54d1716a674",
+        "parentUid" : "6a800889873681277b423a57c6a12970",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631914540,
+          "stop" : 1713631914902,
+          "duration" : 362
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "6a800889873681277b423a57c6a12970"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-6300-playwright-worker-0",
+      "children" : [ {
+        "name" : "Search for a Stay",
+        "uid" : "fb7a1cb732a14da5",
+        "parentUid" : "0b02ef30eafededaae25ed7815a4726d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632596832,
+          "stop" : 1713632601930,
+          "duration" : 5098
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "151530ee78bb08e6",
+        "parentUid" : "0b02ef30eafededaae25ed7815a4726d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713632601932,
+          "stop" : 1713632605581,
+          "duration" : 3649
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "5608ae026fb8c2cc",
+        "parentUid" : "0b02ef30eafededaae25ed7815a4726d",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632605597,
+          "stop" : 1713632605598,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "c4baec194a6443e1",
+        "parentUid" : "0b02ef30eafededaae25ed7815a4726d",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632605596,
+          "stop" : 1713632605596,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "e214b2b53af1028d",
+        "parentUid" : "0b02ef30eafededaae25ed7815a4726d",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632605598,
+          "stop" : 1713632605599,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "3e2c4e6ec4903560",
+        "parentUid" : "0b02ef30eafededaae25ed7815a4726d",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632605600,
+          "stop" : 1713632605600,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "0b02ef30eafededaae25ed7815a4726d"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-8712-playwright-worker-0",
+      "children" : [ {
+        "name" : "Select a Listing",
+        "uid" : "1e167b9f9b7a18d6",
+        "parentUid" : "d707b4a0ab9b3646df1cff8a0d1acedf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713630717189,
+          "stop" : 1713630722418,
+          "duration" : 5229
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "ecda9e528fb35ab0",
+        "parentUid" : "d707b4a0ab9b3646df1cff8a0d1acedf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713630711986,
+          "stop" : 1713630717187,
+          "duration" : 5201
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "31a470f87089d098",
+        "parentUid" : "d707b4a0ab9b3646df1cff8a0d1acedf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713630723354,
+          "stop" : 1713630726501,
+          "duration" : 3147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "d707b4a0ab9b3646df1cff8a0d1acedf"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-16960-playwright-worker-0",
+      "children" : [ {
+        "name" : "Confirm Booking Details",
+        "uid" : "a5ebf2f0ffdd1254",
+        "parentUid" : "acd6432de17adebfb80cc1c45d43be12",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633689142,
+          "stop" : 1713633689142,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "4af30921707d4bb7",
+        "parentUid" : "acd6432de17adebfb80cc1c45d43be12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633658498,
+          "stop" : 1713633668459,
+          "duration" : 9961
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "9272df1b3dbfa860",
+        "parentUid" : "acd6432de17adebfb80cc1c45d43be12",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633689143,
+          "stop" : 1713633689143,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "24b44e7cc84021c4",
+        "parentUid" : "acd6432de17adebfb80cc1c45d43be12",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633689144,
+          "stop" : 1713633689144,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "41cdf46774c95ea",
+        "parentUid" : "acd6432de17adebfb80cc1c45d43be12",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633689143,
+          "stop" : 1713633689144,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "3b5c107ea2b9ac6c",
+        "parentUid" : "acd6432de17adebfb80cc1c45d43be12",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713633668464,
+          "stop" : 1713633689127,
+          "duration" : 20663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "acd6432de17adebfb80cc1c45d43be12"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-20608-playwright-worker-0",
+      "children" : [ {
+        "name" : "Reserve and Validate",
+        "uid" : "9a75bb40ddef52d8",
+        "parentUid" : "c05a824c189baac422a3f4b0eaa23026",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633844585,
+          "stop" : 1713633844586,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "2997369d346c09b1",
+        "parentUid" : "c05a824c189baac422a3f4b0eaa23026",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713633821257,
+          "stop" : 1713633844572,
+          "duration" : 23315
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "169487decacb2952",
+        "parentUid" : "c05a824c189baac422a3f4b0eaa23026",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633819916,
+          "stop" : 1713633821256,
+          "duration" : 1340
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "831dec8ef5f1b92c",
+        "parentUid" : "c05a824c189baac422a3f4b0eaa23026",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633819825,
+          "stop" : 1713633819915,
+          "duration" : 90
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "dfe30c4a125c34e6",
+        "parentUid" : "c05a824c189baac422a3f4b0eaa23026",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633814167,
+          "stop" : 1713633819823,
+          "duration" : 5656
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "a0543518b7a9c546",
+        "parentUid" : "c05a824c189baac422a3f4b0eaa23026",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713633809230,
+          "stop" : 1713633814165,
+          "duration" : 4935
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "c05a824c189baac422a3f4b0eaa23026"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-4092-playwright-worker-0",
+      "children" : [ {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "69985d71523027dd",
+        "parentUid" : "ab0282165cb4fca85510cfdc7592d2f6",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632105035,
+          "stop" : 1713632105035,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "702c8157a7c1764f",
+        "parentUid" : "ab0282165cb4fca85510cfdc7592d2f6",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632105034,
+          "stop" : 1713632105034,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "425e240eeaf8f04b",
+        "parentUid" : "ab0282165cb4fca85510cfdc7592d2f6",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632105035,
+          "stop" : 1713632105036,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "1cddb127df4441e0",
+        "parentUid" : "ab0282165cb4fca85510cfdc7592d2f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713632087812,
+          "stop" : 1713632105022,
+          "duration" : 17210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "e91b8901134030c7",
+        "parentUid" : "ab0282165cb4fca85510cfdc7592d2f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632081945,
+          "stop" : 1713632087810,
+          "duration" : 5865
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "dcb46041ad76d3bf",
+        "parentUid" : "ab0282165cb4fca85510cfdc7592d2f6",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632105036,
+          "stop" : 1713632105036,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "ab0282165cb4fca85510cfdc7592d2f6"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-2788-playwright-worker-0",
+      "children" : [ {
+        "name" : "Search for a Stay",
+        "uid" : "91b13e95e0f8a242",
+        "parentUid" : "3b4de9c0ed5ba7daf088f81369291a5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632643094,
+          "stop" : 1713632647853,
+          "duration" : 4759
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "815d39ab7f96f01a",
+        "parentUid" : "3b4de9c0ed5ba7daf088f81369291a5e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632654245,
+          "stop" : 1713632654246,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "68c5698a688c40e1",
+        "parentUid" : "3b4de9c0ed5ba7daf088f81369291a5e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632654246,
+          "stop" : 1713632654246,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "5c5cd872339aad56",
+        "parentUid" : "3b4de9c0ed5ba7daf088f81369291a5e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632654244,
+          "stop" : 1713632654244,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "78980b7c20c57e00",
+        "parentUid" : "3b4de9c0ed5ba7daf088f81369291a5e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632654247,
+          "stop" : 1713632654247,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "29ba076da7929a0c",
+        "parentUid" : "3b4de9c0ed5ba7daf088f81369291a5e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713632647854,
+          "stop" : 1713632654233,
+          "duration" : 6379
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "3b4de9c0ed5ba7daf088f81369291a5e"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-12908-playwright-worker-0",
+      "children" : [ {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "db5dd2cc09cdadc",
+        "parentUid" : "557cfd5abffae58b9b1b3eeb952ccdb0",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633079705,
+          "stop" : 1713633079705,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "19789f6cd38dcff",
+        "parentUid" : "557cfd5abffae58b9b1b3eeb952ccdb0",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633079707,
+          "stop" : 1713633079707,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "3cc452641a45d723",
+        "parentUid" : "557cfd5abffae58b9b1b3eeb952ccdb0",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633079704,
+          "stop" : 1713633079704,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "af774445025b3585",
+        "parentUid" : "557cfd5abffae58b9b1b3eeb952ccdb0",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633079706,
+          "stop" : 1713633079706,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "f0e211160744a12d",
+        "parentUid" : "557cfd5abffae58b9b1b3eeb952ccdb0",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633079702,
+          "stop" : 1713633079703,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "2eb4f356d8b1049a",
+        "parentUid" : "557cfd5abffae58b9b1b3eeb952ccdb0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713633067989,
+          "stop" : 1713633079686,
+          "duration" : 11697
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "557cfd5abffae58b9b1b3eeb952ccdb0"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-18008-playwright-worker-0",
+      "children" : [ {
+        "name" : "Reserve and Validate",
+        "uid" : "4f8b673c0fcaf3b7",
+        "parentUid" : "01a4fc3c303050df87ba56e857965ecb",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632573841,
+          "stop" : 1713632573841,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "bd7e26ade26abb61",
+        "parentUid" : "01a4fc3c303050df87ba56e857965ecb",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632573839,
+          "stop" : 1713632573839,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "6f782e18db2bf821",
+        "parentUid" : "01a4fc3c303050df87ba56e857965ecb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713632542169,
+          "stop" : 1713632573828,
+          "duration" : 31659
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "ccc921d3db994969",
+        "parentUid" : "01a4fc3c303050df87ba56e857965ecb",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632573840,
+          "stop" : 1713632573840,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "392119d68aaf38ad",
+        "parentUid" : "01a4fc3c303050df87ba56e857965ecb",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632573839,
+          "stop" : 1713632573840,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "10113d2a292dc41",
+        "parentUid" : "01a4fc3c303050df87ba56e857965ecb",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632573840,
+          "stop" : 1713632573841,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "01a4fc3c303050df87ba56e857965ecb"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-18848-playwright-worker-0",
+      "children" : [ {
+        "name" : "Confirm Booking Details",
+        "uid" : "21a3ada4af753794",
+        "parentUid" : "65cd89beeb50a93a18f2cb76652db61c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713630773661,
+          "stop" : 1713630774075,
+          "duration" : 414
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "5165eab8d2c83e05",
+        "parentUid" : "65cd89beeb50a93a18f2cb76652db61c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713630767444,
+          "stop" : 1713630773660,
+          "duration" : 6216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "8ed97cf0205ae56c",
+        "parentUid" : "65cd89beeb50a93a18f2cb76652db61c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713630774732,
+          "stop" : 1713630775169,
+          "duration" : 437
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "2517fb0db7ab4371",
+        "parentUid" : "65cd89beeb50a93a18f2cb76652db61c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713630774076,
+          "stop" : 1713630774727,
+          "duration" : 651
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "a0f7ece61f501ddc",
+        "parentUid" : "65cd89beeb50a93a18f2cb76652db61c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713630759914,
+          "stop" : 1713630767442,
+          "duration" : 7528
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "1335a412dfce68e7",
+        "parentUid" : "65cd89beeb50a93a18f2cb76652db61c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713630774728,
+          "stop" : 1713630774732,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "65cd89beeb50a93a18f2cb76652db61c"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-21196-playwright-worker-0",
+      "children" : [ {
+        "name" : "Search for a Stay",
+        "uid" : "7241165bb0938366",
+        "parentUid" : "bc3c8b9a9387bdb58fd2938968a46f31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632768824,
+          "stop" : 1713632776145,
+          "duration" : 7321
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "996b763bc6bec222",
+        "parentUid" : "bc3c8b9a9387bdb58fd2938968a46f31",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632783040,
+          "stop" : 1713632783041,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "acca98464888a28e",
+        "parentUid" : "bc3c8b9a9387bdb58fd2938968a46f31",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713632782477,
+          "stop" : 1713632783026,
+          "duration" : 549
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "ad67571fe1d0eed7",
+        "parentUid" : "bc3c8b9a9387bdb58fd2938968a46f31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632782406,
+          "stop" : 1713632782475,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "67b0fb2e9b8468b6",
+        "parentUid" : "bc3c8b9a9387bdb58fd2938968a46f31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632776148,
+          "stop" : 1713632782405,
+          "duration" : 6257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "465f297284180103",
+        "parentUid" : "bc3c8b9a9387bdb58fd2938968a46f31",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632783040,
+          "stop" : 1713632783040,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "bc3c8b9a9387bdb58fd2938968a46f31"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-15208-playwright-worker-0",
+      "children" : [ {
+        "name" : "Select a Listing",
+        "uid" : "a70281f73cf45365",
+        "parentUid" : "e05565c7e4bd01100770e1ab06801a06",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633174137,
+          "stop" : 1713633174137,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "b59baf7b0e3a28",
+        "parentUid" : "e05565c7e4bd01100770e1ab06801a06",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633174138,
+          "stop" : 1713633174138,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "838fd9fe8f7e8fb0",
+        "parentUid" : "e05565c7e4bd01100770e1ab06801a06",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633174139,
+          "stop" : 1713633174139,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "979d88e722a968d6",
+        "parentUid" : "e05565c7e4bd01100770e1ab06801a06",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633174139,
+          "stop" : 1713633174139,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "2cdff08602ca0078",
+        "parentUid" : "e05565c7e4bd01100770e1ab06801a06",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633174140,
+          "stop" : 1713633174140,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "917f7be86afdc546",
+        "parentUid" : "e05565c7e4bd01100770e1ab06801a06",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713633164227,
+          "stop" : 1713633174127,
+          "duration" : 9900
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "e05565c7e4bd01100770e1ab06801a06"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-18184-playwright-worker-0",
+      "children" : [ {
+        "name" : "Reserve and Validate",
+        "uid" : "d765291d6cf6409",
+        "parentUid" : "72bfffe217352d49386ba0d3ce5232b8",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632732813,
+          "stop" : 1713632732813,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "dde639365368a66d",
+        "parentUid" : "72bfffe217352d49386ba0d3ce5232b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632722818,
+          "stop" : 1713632728646,
+          "duration" : 5828
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "181f44a0db5ed3a5",
+        "parentUid" : "72bfffe217352d49386ba0d3ce5232b8",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632732811,
+          "stop" : 1713632732811,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "fd31d1835388901b",
+        "parentUid" : "72bfffe217352d49386ba0d3ce5232b8",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632732812,
+          "stop" : 1713632732812,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "225c2b472e37a92",
+        "parentUid" : "72bfffe217352d49386ba0d3ce5232b8",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632732812,
+          "stop" : 1713632732813,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "4e5b742556571464",
+        "parentUid" : "72bfffe217352d49386ba0d3ce5232b8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713632728647,
+          "stop" : 1713632732801,
+          "duration" : 4154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "72bfffe217352d49386ba0d3ce5232b8"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-8712-playwright-worker--1",
+      "children" : [ {
+        "name" : "Reserve and Validate",
+        "uid" : "4585f57b35205b62",
+        "parentUid" : "8caf19302daa6b3019585af673caa034",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713630726506,
+          "stop" : 1713630726506,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "5c512e3078627f67",
+        "parentUid" : "8caf19302daa6b3019585af673caa034",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713630726504,
+          "stop" : 1713630726505,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "1626d05abe4182c9",
+        "parentUid" : "8caf19302daa6b3019585af673caa034",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713630726503,
+          "stop" : 1713630726504,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "8caf19302daa6b3019585af673caa034"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-16412-playwright-worker-0",
+      "children" : [ {
+        "name" : "Change Booking Dates",
+        "uid" : "b100923c1f5f912c",
+        "parentUid" : "bfcafd0c1a038061ae30c46f13026a4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631868093,
+          "stop" : 1713631868096,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "5a624143d2b0b765",
+        "parentUid" : "bfcafd0c1a038061ae30c46f13026a4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631863554,
+          "stop" : 1713631867019,
+          "duration" : 3465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "5decba52466b3e4e",
+        "parentUid" : "bfcafd0c1a038061ae30c46f13026a4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631868097,
+          "stop" : 1713631868500,
+          "duration" : 403
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "d867d1d902874e8f",
+        "parentUid" : "bfcafd0c1a038061ae30c46f13026a4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631867416,
+          "stop" : 1713631868092,
+          "duration" : 676
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "2cdd16243276be1e",
+        "parentUid" : "bfcafd0c1a038061ae30c46f13026a4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631867019,
+          "stop" : 1713631867415,
+          "duration" : 396
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "3dcc491e5a2f8527",
+        "parentUid" : "bfcafd0c1a038061ae30c46f13026a4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713631856965,
+          "stop" : 1713631863553,
+          "duration" : 6588
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "bfcafd0c1a038061ae30c46f13026a4d"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-688-playwright-worker--1",
+      "children" : [ {
+        "name" : "Reserve and Validate",
+        "uid" : "5972faf11c2c2046",
+        "parentUid" : "416d226eea9df3967da769f02c1b3afe",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633778421,
+          "stop" : 1713633778422,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "b89b87045ea363fd",
+        "parentUid" : "416d226eea9df3967da769f02c1b3afe",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713633778420,
+          "stop" : 1713633778421,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "416d226eea9df3967da769f02c1b3afe"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-19236-playwright-worker-0",
+      "children" : [ {
+        "name" : "Search for a Stay",
+        "uid" : "668d3dff09cd8984",
+        "parentUid" : "3ab31e2d4d198400d81a228ccf339781",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632613656,
+          "stop" : 1713632618361,
+          "duration" : 4705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "9ff7a546fda2f263",
+        "parentUid" : "3ab31e2d4d198400d81a228ccf339781",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632638833,
+          "stop" : 1713632638833,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "905c31fcf6bf3e67",
+        "parentUid" : "3ab31e2d4d198400d81a228ccf339781",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632638831,
+          "stop" : 1713632638832,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "589ab73f07b2b728",
+        "parentUid" : "3ab31e2d4d198400d81a228ccf339781",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632638832,
+          "stop" : 1713632638832,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Select a Listing",
+        "uid" : "25b884c45b085859",
+        "parentUid" : "3ab31e2d4d198400d81a228ccf339781",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713632618362,
+          "stop" : 1713632638824,
+          "duration" : 20462
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "b961677a70fdc7a1",
+        "parentUid" : "3ab31e2d4d198400d81a228ccf339781",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1713632638833,
+          "stop" : 1713632638833,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "3ab31e2d4d198400d81a228ccf339781"
+    }, {
+      "name" : "DESKTOP-C5T3T2P-10016-playwright-worker-0",
+      "children" : [ {
+        "name" : "Select a Listing",
+        "uid" : "86cfcb95c731d03c",
+        "parentUid" : "468beb274301d8e922bf1a4ff47be134",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632129254,
+          "stop" : 1713632134949,
+          "duration" : 5695
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Search for a Stay",
+        "uid" : "a55c5b3fb2eda9e5",
+        "parentUid" : "468beb274301d8e922bf1a4ff47be134",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632118760,
+          "stop" : 1713632129253,
+          "duration" : 10493
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Change Booking Dates",
+        "uid" : "9ff943bc786111fa",
+        "parentUid" : "468beb274301d8e922bf1a4ff47be134",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632136104,
+          "stop" : 1713632136109,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Confirm Booking Details",
+        "uid" : "b73cf700f3114609",
+        "parentUid" : "468beb274301d8e922bf1a4ff47be134",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632134951,
+          "stop" : 1713632135361,
+          "duration" : 410
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Adjust and Verify Guest Count",
+        "uid" : "f9459114a0fae0ac",
+        "parentUid" : "468beb274301d8e922bf1a4ff47be134",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632135362,
+          "stop" : 1713632136103,
+          "duration" : 741
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      }, {
+        "name" : "Reserve and Validate",
+        "uid" : "60611920db181f3",
+        "parentUid" : "468beb274301d8e922bf1a4ff47be134",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713632136110,
+          "stop" : 1713632136521,
+          "duration" : 411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "468beb274301d8e922bf1a4ff47be134"
+    } ],
+    "uid" : "7ac4211561b4f7c01b1d5c8318b74ab8"
+  } ]
+}

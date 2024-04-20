@@ -1,0 +1,688 @@
+{
+  "uid" : "dfe30c4a125c34e6",
+  "name" : "Select a Listing",
+  "fullName" : "roomReservationTests/reserveAStay.spec.js#Reservation Process @Web Select a Listing",
+  "historyId" : "7f35bb719b31d0ef2d1231ede150419a:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "time" : {
+    "start" : 1713633814167,
+    "stop" : 1713633819823,
+    "duration" : 5656
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1713633814167,
+        "stop" : 1713633814167,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "beforeEach hook",
+        "time" : {
+          "start" : 1713633814167,
+          "stop" : 1713633814167,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "locator.count(nav[aria-label = \"Search results pagination\"] >> div > a[href])",
+      "time" : {
+        "start" : 1713633814169,
+        "stop" : 1713633814176,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.textContent(nav[aria-label = \"Search results pagination\"] >> div > a[href] >> nth=-2)",
+      "time" : {
+        "start" : 1713633814178,
+        "stop" : 1713633817246,
+        "duration" : 3068
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"])",
+      "time" : {
+        "start" : 1713633817247,
+        "stop" : 1713633817251,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=0)",
+      "time" : {
+        "start" : 1713633817253,
+        "stop" : 1713633817261,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=0)",
+      "time" : {
+        "start" : 1713633817262,
+        "stop" : 1713633817272,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=1)",
+      "time" : {
+        "start" : 1713633817273,
+        "stop" : 1713633817281,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=2)",
+      "time" : {
+        "start" : 1713633817282,
+        "stop" : 1713633817290,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=3)",
+      "time" : {
+        "start" : 1713633817292,
+        "stop" : 1713633817302,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=4)",
+      "time" : {
+        "start" : 1713633817303,
+        "stop" : 1713633817311,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=5)",
+      "time" : {
+        "start" : 1713633817312,
+        "stop" : 1713633817319,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=6)",
+      "time" : {
+        "start" : 1713633817320,
+        "stop" : 1713633817327,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=7)",
+      "time" : {
+        "start" : 1713633817328,
+        "stop" : 1713633817336,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=8)",
+      "time" : {
+        "start" : 1713633817338,
+        "stop" : 1713633817456,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=9)",
+      "time" : {
+        "start" : 1713633817458,
+        "stop" : 1713633817468,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=10)",
+      "time" : {
+        "start" : 1713633817469,
+        "stop" : 1713633817477,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=11)",
+      "time" : {
+        "start" : 1713633817478,
+        "stop" : 1713633817488,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=12)",
+      "time" : {
+        "start" : 1713633817490,
+        "stop" : 1713633817498,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=13)",
+      "time" : {
+        "start" : 1713633817499,
+        "stop" : 1713633817506,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=14)",
+      "time" : {
+        "start" : 1713633817508,
+        "stop" : 1713633817515,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=15)",
+      "time" : {
+        "start" : 1713633817516,
+        "stop" : 1713633817523,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.waitFor(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=16)",
+      "time" : {
+        "start" : 1713633817525,
+        "stop" : 1713633817532,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >>  > div > div:last-child > div:last-child)",
+      "time" : {
+        "start" : 1713633817533,
+        "stop" : 1713633817541,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >>  > div > div:last-child > div:last-child >> nth=0 >> span[aria-hidden=\"true\"])",
+      "time" : {
+        "start" : 1713633817542,
+        "stop" : 1713633817549,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.textContent(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >>  > div > div:last-child > div:last-child >> nth=0 >> span[aria-hidden=\"true\"])",
+      "time" : {
+        "start" : 1713633817550,
+        "stop" : 1713633817558,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.allTextContents(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"])",
+      "time" : {
+        "start" : 1713633817559,
+        "stop" : 1713633817582,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.allTextContents(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >>  > div > div:last-child > div[data-testid=\"listing-card-subtitle\"]:nth-child(2) )",
+      "time" : {
+        "start" : 1713633817585,
+        "stop" : 1713633817595,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=0)",
+      "time" : {
+        "start" : 1713633817597,
+        "stop" : 1713633817604,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >>  > div > div:last-child > div:last-child)",
+      "time" : {
+        "start" : 1713633817605,
+        "stop" : 1713633817613,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >>  > div > div:last-child > div:last-child >> nth=1 >> span[aria-hidden=\"true\"])",
+      "time" : {
+        "start" : 1713633817614,
+        "stop" : 1713633817622,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.textContent(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >>  > div > div:last-child > div:last-child >> nth=1 >> span[aria-hidden=\"true\"])",
+      "time" : {
+        "start" : 1713633817623,
+        "stop" : 1713633817630,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.allTextContents(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"])",
+      "time" : {
+        "start" : 1713633817632,
+        "stop" : 1713633817638,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.allTextContents(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >>  > div > div:last-child > div[data-testid=\"listing-card-subtitle\"]:nth-child(2) )",
+      "time" : {
+        "start" : 1713633817639,
+        "stop" : 1713633817648,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.getAttribute(div[aria-live=\"polite\"] > div > div[class = \" dir dir-ltr\"] >> div[data-testid=\"card-container\"] >> div[data-testid = \"listing-card-title\"] >> nth=1)",
+      "time" : {
+        "start" : 1713633817649,
+        "stop" : 1713633817655,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(#title_1072285448359233170)",
+      "time" : {
+        "start" : 1713633817657,
+        "stop" : 1713633817730,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "browserContext.waitForEvent",
+      "time" : {
+        "start" : 1713633817736,
+        "stop" : 1713633818257,
+        "duration" : 521
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "page.waitForLoadState",
+      "time" : {
+        "start" : 1713633818259,
+        "stop" : 1713633819079,
+        "duration" : 820
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveText",
+      "time" : {
+        "start" : 1713633819084,
+        "stop" : 1713633819115,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(div[data-testid = \"modal-container\"] button[aria-label=\"Close\"])",
+      "time" : {
+        "start" : 1713633819118,
+        "stop" : 1713633819820,
+        "duration" : 702
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1713633819821,
+        "stop" : 1713633819822,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3a713395d545c508",
+      "name" : "stdout",
+      "source" : "3a713395d545c508.txt",
+      "type" : "text/plain",
+      "size" : 176
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 41,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > chromium > roomReservationTests\\reserveAStay.spec.js > Reservation Process @Web"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-C5T3T2P"
+  }, {
+    "name" : "thread",
+    "value" : "DESKTOP-C5T3T2P-20608-playwright-worker-0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium"
+  }, {
+    "name" : "suite",
+    "value" : "roomReservationTests\\reserveAStay.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Reservation Process @Web"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "chromium"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dfe30c4a125c34e6.json",
+  "parameterValues" : [ "chromium" ]
+}
