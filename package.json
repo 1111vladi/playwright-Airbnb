@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test reserveAStay.spec.js --project=chromium --workers=1 --reporter=line,allure-playwright",
+    "test": "npx playwright test reserveAStay.spec.js --project=chromium --workers=1 --headed --reporter=line,allure-playwright ",
     "test2": "npx playwright test UIBasicstest.spec --project=chromium",
     "openUi": "npx playwright test --ui",
     "showReport": "npx playwright show-report",

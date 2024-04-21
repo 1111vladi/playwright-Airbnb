@@ -42,7 +42,7 @@ module.exports = defineConfig({
             use: {
                 baseURL: baseUrl,
                 // ...devices["Desktop Chrome"], // TODO - Check later
-                headless: false,
+                // headless: false,
                 launchOptions: {
                     args: ["--start-maximized"],
                 },
