@@ -1,4 +1,5 @@
 import {modifyDateByOperation} from "../momentUtils";
+import {guestsTypeList} from "../constants";
 const checkInDate = modifyDateByOperation(1, 0, 0, 'add');
 const checkOutDate = modifyDateByOperation(3, 0, 0, 'add');
 const updatedCheckInDate = modifyDateByOperation(1, 0, 0, 'add');
@@ -22,11 +23,11 @@ export const data = {
     },
     guests: {
         adults: {
-            type: 'adults',
+            type: guestsTypeList.adults,
             count: adultCount
         },
         children: {
-            type: 'children',
+            type: guestsTypeList.children,
             count: childrenCount
         },
     },
@@ -35,7 +36,7 @@ export const data = {
 
 export const updatedChildrenCount = {
     children: {
-        type: 'children',
+        type: guestsTypeList.children,
         count: 0
     },
 }

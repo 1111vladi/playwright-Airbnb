@@ -6,11 +6,10 @@ import {getElementsCount} from "../../extensions/uiActions";
 export default class ReservationCardComponent {
     constructor(page) {
         this.page = page;
+        this.datePickerComponent = new DatePickerComponent(page);
         this.reservationCardContainer = this.page.locator('div[data-section-id="BOOK_IT_SIDEBAR"]');
         this.headerInfo = this.reservationCardContainer.locator('div[data-testid="book-it-default"]');
         this.reserveButton = this.headerInfo.locator('button[data-testid="homes-pdp-cta-btn"]');
-        // Date picker component
-        this.datePickerComponent = new DatePickerComponent(page);
         // GuestsComponent
         this.guestsComponent = new GuestsComponent(page);
         this.guestsMainInfo = this.guestsComponent.reservationGuestsMainInfo;
@@ -55,7 +54,6 @@ export default class ReservationCardComponent {
         }
     }
 
-
     async openGuestsInfo(){
         await this.guestsMainInfo.click();
     }
@@ -77,6 +75,15 @@ export default class ReservationCardComponent {
     async verifyReservationGuestsCount(guestsNum) {
         const guestsCountElem = await this.guestsMainInfo.locator('span');
         await expect(guestsCountElem).toHaveText(`${guestsNum} guests`);
+    }
+
+    async openDatePickerModal() {
+        await this.datePickerComponent.openDatePickerModal();
+    }
+
+    async datePicker(pageName, checkinOptions, checkoutOptions){
+        await this.openDatePickerModal();
+        await this.datePickerComponent.datePicker(pageName, checkinOptions, checkoutOptions);
     }
 
 }

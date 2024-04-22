@@ -10,7 +10,7 @@ export default class DatePickerComponent {
         this.mainPageDatePickerContainer = this.page.locator('div[data-testid="structured-search-input-field-dates-panel"]');
         this.mainPageCheckInDate = this.page.locator('div[data-testid="structured-search-input-field-split-dates-0"]');
         this.mainPageCheckOutDate = this.page.locator('div[data-testid="structured-search-input-field-split-dates-1"]');
-        // ListingPage
+        // Listing Page
         this.listingPageDatePickerContainer = this.page.locator('div[data-testid="bookit-sidebar-availability-calendar"]');
         this.listingPageCheckInDate = this.page.locator('div[data-testid="change-dates-checkIn"]');
         this.listingPageCheckOutDate = this.page.locator('div[data-testid="change-dates-checkOut"]');

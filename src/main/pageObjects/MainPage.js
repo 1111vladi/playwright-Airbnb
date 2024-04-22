@@ -7,8 +7,8 @@ export default class MainPage {
         this.topToolBarComponent = new TopToolBarComponent(page);
     }
 
-    async datePicker(pageName = pagesNameList.mainPage, checkinOptions, checkoutOptions) {
-        await this.topToolBarComponent.datePicker(pageName, { checkinOptions, checkoutOptions });
+    async datePicker(checkinOptions, checkoutOptions) {
+        await this.topToolBarComponent.datePicker(pagesNameList.mainPage, checkinOptions, checkoutOptions);
     }
 
     async destinationPicker(destination) {
@@ -24,6 +24,6 @@ export default class MainPage {
     }
 
     async searchForAStay(stayDetails) {
-        await this.topToolBarComponent.searchForAStay(stayDetails);
+        await this.topToolBarComponent.searchForAStay(pagesNameList.mainPage, stayDetails);
     }
 }

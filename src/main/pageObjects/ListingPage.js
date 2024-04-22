@@ -7,11 +7,10 @@ import {pagesNameList} from "../utilities/constants";
 export default class ListingPage {
     constructor(page) {
         this.page = page;
-        this.roomHeader = this.page.locator('div[data-section-id="TITLE_DEFAULT"]');
-        this.translatePopupCloseButton = this.page.locator('div[data-testid = "modal-container"] button[aria-label="Close"]');
         this.reservationCardComponent = new ReservationCardComponent(page);
         this.guestsComponent = new GuestsComponent(page);
-        this.datePickerComponent = new DatePickerComponent(page);
+        this.roomHeader = this.page.locator('div[data-section-id="TITLE_DEFAULT"]');
+        this.translatePopupCloseButton = this.page.locator('div[data-testid = "modal-container"] button[aria-label="Close"]');
     }
 
     // TODO - not always the same subtitle
@@ -54,15 +53,10 @@ export default class ListingPage {
     }
 
     async clickReserve(){
-        await this.reservationCardComponent.reserveButton.click();
-    }
-
-    async openDatePickerModal(){
-        await this.datePickerComponent.openDatePickerModal();
+        await this.reservationCardComponent.clickReserve();
     }
 
     async datePicker(checkinOptions, checkoutOptions){
-        await this.openDatePickerModal();
-        await this.datePickerComponent.datePicker(pagesNameList.listingPage, checkinOptions, checkoutOptions);
+        await this.reservationCardComponent.datePicker(pagesNameList.listingPage, checkinOptions, checkoutOptions);
     }
 }

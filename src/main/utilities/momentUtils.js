@@ -1,4 +1,5 @@
 import moment from "moment";
+import {timeUnits} from "./constants";
 
 export const monthNumberToName = (monthNumber) => {
     return moment(monthNumber, 'MM').format('MMMM');
@@ -10,14 +11,14 @@ const modifyCurrentDate = (numDays, numMonths, numYears, operation) => {
 
     if (operation === 'add') {
         modifiedDate = currentDate
-            .add(numDays, 'days')
-            .add(numMonths, 'months')
-            .add(numYears, 'years');
+            .add(numDays, timeUnits.days)
+            .add(numMonths, timeUnits.months)
+            .add(numYears, timeUnits.years);
     } else if (operation === 'subtract') {
         modifiedDate = currentDate
-            .subtract(numDays, 'days')
-            .subtract(numMonths, 'months')
-            .subtract(numYears, 'years');
+            .subtract(numDays, timeUnits.days)
+            .subtract(numMonths, timeUnits.months)
+            .subtract(numYears, timeUnits.years);
     } else {
         throw new Error('Invalid operation. Please use "add" or "subtract".');
     }

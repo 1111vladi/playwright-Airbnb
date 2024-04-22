@@ -1,7 +1,6 @@
 import SearchComponent from "./SearchComponent";
 import GuestsComponent from "./GuestsComponent";
 import DatePickerComponent from "./datePickerComponent/DatePickerComponent";
-import {pagesNameList} from "../../utilities/constants";
 
 export default class TopToolBarComponent {
 
@@ -34,10 +33,10 @@ export default class TopToolBarComponent {
         }
     }
 
-    async searchForAStay(stayDetails) {
+    async searchForAStay(pageName, stayDetails) {
         const {destination, checkInDate, checkOutDate, guests} = stayDetails;
         await this.destinationPicker(destination);
-        await this.datePicker(pagesNameList.mainPage, checkInDate, checkOutDate);
+        await this.datePicker(pageName, checkInDate, checkOutDate);
         await this.guestsSetter(guests);
         await this.clickSearchButton();
     }

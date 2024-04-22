@@ -10,8 +10,6 @@ export default class POManager {
         this.searchResultsPage = new SearchResultsPage(page);
         this.listingPage = new ListingPage(page);
         this.reservationPage = new ReservationPage(page);
-
-
     }
 
     getListingPage() {
