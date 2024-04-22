@@ -1,13 +1,16 @@
-export const getElementAttributeFromList = async(elements, attValue, expectedValue) => {
+export const getElementAttributeFromList = async (elements, attName, expectedValue) => {
+    let returnElem = 'Element not found';
     const elementsCount = await getElementsCount(elements);
-    for (let i = 0; i < elementsCount - 1; i++) {
+    for (let i = 0; i < elementsCount; i++) {
         const element = await elements.nth(i);
-        const expectedElement = await element.getAttribute(attValue); // Dynamically select either getAttribute or textContent
+        const expectedElement = await element.getAttribute(attName);
         if (expectedElement.includes(expectedValue)) {
             return element;
         }
     }
-}
+    return returnElem;
+};
+
 
 export const getElementTextFromList = async(elements, expectedValue) => {
     const elementsCount = await getElementsCount(elements);

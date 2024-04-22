@@ -1,6 +1,8 @@
 import {modifyDateByOperation} from "../momentUtils";
 const checkInDate = modifyDateByOperation(1, 0, 0, 'add');
-const checkOutDate = modifyDateByOperation(5, 0, 0, 'add');
+const checkOutDate = modifyDateByOperation(3, 0, 0, 'add');
+const updatedCheckInDate = modifyDateByOperation(1, 0, 0, 'add');
+const updatedCheckOutDate = modifyDateByOperation(4, 0, 0, 'add');
 const myDestination = 'Amsterdam, Netherlands';
 const adultCount = 2;
 const childrenCount = 1;
@@ -40,13 +42,13 @@ export const updatedChildrenCount = {
 
 export const updatedDates = {
     checkInDate: {
-        day: checkInDate.days + 7,
-        month: checkInDate.months,
-        year: checkInDate.years,
+        day: updatedCheckInDate.days,
+        month: updatedCheckInDate.months,
+        year: updatedCheckInDate.years,
     },
     checkOutDate: {
-        day: checkOutDate.days + 7,
-        month: checkOutDate.months,
-        year: checkOutDate.years,
+        day: updatedCheckOutDate.days,
+        month: updatedCheckOutDate.months,
+        year: updatedCheckOutDate.years,
     }
 }

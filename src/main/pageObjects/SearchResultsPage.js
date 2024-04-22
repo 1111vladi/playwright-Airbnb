@@ -4,6 +4,8 @@ import {getHighestRatedRoomObj} from "../utilities/filterUtils";
 import {waitForAll} from "../extensions/uiActions";
 import {verifyMultipleElementsVisible} from "../extensions/verifications";
 
+const maxRoomRating = '5.0';
+
 export default class SearchResultsPage {
     constructor(page) {
         this.page = page;
@@ -27,7 +29,7 @@ export default class SearchResultsPage {
     async selectHighestRatedRoom() {
         // await allure.step("Select the highest rated room", async () => {
             const roomResults = await this.getAllPagesRoomResults();
-            if (roomResults.status === 'success' && roomResults.rating === '5.0') {
+            if (roomResults.status === 'success' && roomResults.rating === maxRoomRating) {
                 return roomResults;
             }
             const highestRatedRoomObj = getHighestRatedRoomObj(roomResults.allPagesRoomResults);
@@ -54,7 +56,7 @@ export default class SearchResultsPage {
             const roomIDList = await this.cardNameList.nth(i).getAttribute('id');
             const actualRating = (roomRatingTextList.split(' '))[0];
             // Remove if wanting to iterate over all pages regardless
-            if (actualRating === '5.0') {
+            if (actualRating === maxRoomRating) {
                 await (await this.page.locator(`#${roomIDList}`)).click({force: true});
                 return {
                     id: roomIDList,
@@ -87,7 +89,7 @@ export default class SearchResultsPage {
             await waitForAll(await this.cardList.count(), this.cardNameList);
 
             results = await this.getCurrentPageRoomResults();
-            if (results.status === 'success' && results.rating === '5.0') {
+            if (results.status === 'success' && results.rating === maxRoomRating) {
                 console.log('Highest rated room: ', results);
                 return results;
             }

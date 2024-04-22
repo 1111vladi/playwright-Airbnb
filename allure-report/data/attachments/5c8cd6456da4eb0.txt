@@ -1,1 +1,0 @@
-RESERVE - guestsTypeList:  locator('div[aria-labelledby="GuestPicker-book_it-form"]').locator('> div > div')

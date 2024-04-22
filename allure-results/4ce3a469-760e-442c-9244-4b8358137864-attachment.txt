@@ -1,5 +1,0 @@
-*--*--*--*--*--*--*--*--*--*--*--*--*
-*--*  Starting session... Hello! *--*
-*--*--*--*--*--*--*--*--*--*--*--*--*
-MAIN - guestsTypeList:  locator('div[data-testid = "structured-search-input-field-guests-panel"]').locator('> div > div')
-MAIN - guestsTypeList:  locator('div[data-testid = "structured-search-input-field-guests-panel"]').locator('> div > div')

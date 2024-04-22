@@ -12,9 +12,9 @@ const baseUrl = 'https://www.airbnb.com';
  */
 module.exports = defineConfig({
     testDir: './src/tests',
-    timeout: 60000,
+    timeout: 20000,
     expect: {
-        timeout: 20000,
+        timeout: 2000,
     },
     /* Run tests in files in parallel */
     fullyParallel: true,

@@ -3,6 +3,7 @@ import {verifyExistenceElement} from "../extensions/verifications";
 import ReservationCardComponent from "./components/ReservationCardComponent";
 import GuestsComponent from "./components/GuestsComponent";
 import DatePickerComponent from "./components/datePickerComponent/DatePickerComponent";
+import {pagesNameList} from "../utilities/constants";
 
 export default class ListingPage {
     constructor(page) {
@@ -21,11 +22,15 @@ export default class ListingPage {
     }
 
     async closeTranslatePopup() {
-        // await verifyExistenceElement(true, this.translatePopupCloseButton);
-        await this.translatePopupCloseButton.click();
+        try {
+            await this.translatePopupCloseButton.click({ timeout: 2000 });
+        } catch (error) {
+            console.warn(`Element ${this.translatePopupCloseButton} was not found`);
+        }
     }
 
-    async verifyDates(checkInDate, checkOutDate){
+    async verifyDates(dates){
+        const {checkInDate, checkOutDate } = dates
         await this.reservationCardComponent.verifyDates(checkInDate, checkOutDate);
     }
 
@@ -58,6 +63,7 @@ export default class ListingPage {
     }
 
     async datePicker(checkinOptions, checkoutOptions){
-        await this.datePickerComponent.datePicker(checkinOptions, checkoutOptions);
+        await this.openDatePickerModal();
+        await this.datePickerComponent.datePicker(pagesNameList.listingPage, checkinOptions, checkoutOptions);
     }
 }

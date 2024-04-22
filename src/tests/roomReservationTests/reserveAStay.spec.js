@@ -6,6 +6,8 @@ import {setup, teardown} from "../../main/utilities/commonOps";
 
 let mainPage, searchResultsPage, listingPage, reservationPage;
 let page, context, poManager;
+let highestRatedRoom;
+test.describe.configure({ mode: 'serial' })
 
 test.beforeAll(async ({browser}) => {
     ({page, context} = await setup({browser}));
@@ -14,11 +16,18 @@ test.beforeAll(async ({browser}) => {
     searchResultsPage = poManager.getSearchResultsPage();
 });
 
-test.beforeEach(async ({}, testInfo) => {
-    // if(testInfo.title !== 'Search for a Stay'){
-    //     await page.goto('/');
-    //     highestRatedRoom = await searchResultsPage.selectHighestRatedRoom();
-    // }
+// test.beforeEach(async ({}, testInfo) => {
+//     // if(testInfo.title !== 'Search for a Stay'){
+//     //     await page.goto('/');
+//     //     highestRatedRoom = await searchResultsPage.selectHighestRatedRoom();
+//     // }
+// });
+
+test.afterEach(async ({}, testInfo) => {
+    // Save test names in a const?
+    if(testInfo.title === 'Change Booking Dates'){
+        await listingPage.clickReserve();
+    }
 });
 
 test.afterAll(async ({browser}) => {
@@ -26,23 +35,22 @@ test.afterAll(async ({browser}) => {
 });
 
 test.describe("Reservation Process @Web", () => {
-    test('Search for a Stay', async () => {
+    test(`Search for a Stay`, async () => {
         await mainPage.searchForAStay(data);
         await searchResultsPage.verifyRoomResultsVisible();
     });
 
     test('Select a Listing', async () => {
-        const highestRatedRoom = await searchResultsPage.selectHighestRatedRoom();
+         highestRatedRoom = await searchResultsPage.selectHighestRatedRoom();
 
         // *****
         // Should be a better way for this
         const newPage = await getNewPageContext(context);
         await newPage.waitForLoadState();
-        // *****
-
         poManager = new POManager(newPage);
         listingPage = poManager.getListingPage();
         reservationPage = poManager.getReservationPage();
+        // *****
 
         await listingPage.verifyRoomIsSelected(highestRatedRoom.subTitle);
         await listingPage.closeTranslatePopup();
@@ -58,13 +66,11 @@ test.describe("Reservation Process @Web", () => {
     });
 
     test('Change Booking Dates', async () => {
-        // await listingPage.openDatePickerModal();
-        // await listingPage.datePicker(updatedDates); // change element
-        // await listingPage.verifyDates(updatedDates);
+        await listingPage.datePicker(updatedDates.checkInDate, updatedDates.checkOutDate);
     });
 
     test('Reserve and Validate', async () => {
-        await listingPage.clickReserve();
-        await reservationPage.verifyURLGuestsCount(data.guests.adults.type, data.guests.adults.count);
+        const { type, count } = data.guests.adults;
+        await reservationPage.verifyURLGuestsCount(type, count);
     });
 });

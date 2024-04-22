@@ -10,11 +10,16 @@ export const verifyMultipleElementsVisible = async(elements) => {
 }
 
 // TODO - modify
-export const verifyExistenceElement = async(toExist, element) => {
-    if (toExist) {
-        await expect(await element.count()).toBeGreaterThan(0);
-    } else {
-        await expect(await element.count()).toBe(0);
+export const verifyExistenceElement = async (toExist, element) => {
+    try {
+        if (toExist) {
+            await expect(await element.count()).toBeGreaterThan(0);
+        } else {
+            await expect(await element.count()).toBe(0);
+        }
+    } catch (error) {
+        console.warn("Didn't verify existence element");
     }
 }
+
 

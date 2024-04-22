@@ -11,8 +11,8 @@ export default class ReservationCardComponent {
         this.reserveButton = this.headerInfo.locator('button[data-testid="homes-pdp-cta-btn"]');
         // Date picker component
         this.datePickerComponent = new DatePickerComponent(page);
-        this.checkInDate = this.headerInfo.locator(this.datePickerComponent.checkInDate);
-        this.checkOutDate = this.headerInfo.locator(this.datePickerComponent.checkOutDate);
+        this.checkInDate = this.headerInfo.locator(this.datePickerComponent.listingPageCheckInDate);
+        this.checkOutDate = this.headerInfo.locator(this.datePickerComponent.listingPageCheckOutDate);
         // GuestsComponent
         this.guestsComponent = new GuestsComponent(page);
         this.guestsMainInfo = this.guestsComponent.reservationGuestsMainInfo;

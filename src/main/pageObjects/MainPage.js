@@ -1,4 +1,5 @@
 import TopToolBarComponent from "./components/TopToolBarComponent";
+import {pagesNameList} from "../utilities/constants";
 
 export default class MainPage {
     constructor(page) {
@@ -6,8 +7,8 @@ export default class MainPage {
         this.topToolBarComponent = new TopToolBarComponent(page);
     }
 
-    async datePicker(checkinOptions, checkoutOptions) {
-        await this.topToolBarComponent.datePicker(checkinOptions, checkoutOptions);
+    async datePicker(pageName = pagesNameList.mainPage, checkinOptions, checkoutOptions) {
+        await this.topToolBarComponent.datePicker(pageName, { checkinOptions, checkoutOptions });
     }
 
     async destinationPicker(destination) {

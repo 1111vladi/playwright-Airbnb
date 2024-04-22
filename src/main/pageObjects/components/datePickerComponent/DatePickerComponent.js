@@ -1,60 +1,81 @@
-import {monthNumberToName} from "../../../utilities/momentUtils";
 import {getElementAttributeFromList} from "../../../extensions/uiActions";
+import {pagesNameList} from "../../../utilities/constants";
 
 export default class DatePickerComponent {
 
     constructor(page) {
         this.page = page;
-        this.checkInDate = this.page.locator('div[data-testid="change-dates-checkIn"]');
-        this.checkOutDate = this.page.locator('div[data-testid="change-dates-checkOut"]');
-        this.closeModal = this.page.locator('button[data-testid="availability-calendar-save"]');
+        // Main Page
+        this.mainPageDatePickerContainer = this.page.locator('div[data-testid="structured-search-input-field-dates-panel"]');
+        this.mainPageCheckInDate = this.page.locator('div[data-testid="structured-search-input-field-split-dates-0"]');
+        this.mainPageCheckOutDate = this.page.locator('div[data-testid="structured-search-input-field-split-dates-1"]');
+        // ListingPage
+        this.listingPageDatePickerContainer = this.page.locator('div[data-testid="bookit-sidebar-availability-calendar"]');
+        this.listingPageCheckInDate = this.page.locator('div[data-testid="change-dates-checkIn"]');
+        this.listingPageCheckOutDate = this.page.locator('div[data-testid="change-dates-checkOut"]');
+        this.listingPageCloseModal = this.page.locator('button[data-testid="availability-calendar-save"]');
     }
 
-    async closeDatePickerModal(){
-        await this.closeModal.click();
-    }
-
-    async openDatePickerModal(){
-        await this.checkInDate.click();
-    }
-
-    async getDaysList(month, year) {
-        const monthName = monthNumberToName(month);
-        return this.page.locator(`//div[@aria-label = "Calendar"]//*[text() = "${monthName} ${year}"]/../../../../div/table[@role = "presentation"]/tbody/tr/td/div[@data-is-day-blocked]`);
-    }
-
-    async datePicker(checkinOptions, checkoutOptions) {
-        const expectedAttValue = 'data-testid';
-
+    async datePicker(pageName, checkinOptions, checkoutOptions) {
         // Check in
-        const { day: checkinDay, month: checkinMonth, year: checkinYear } = checkinOptions;
-        const checkInDaysList = await this.getDaysList(checkinMonth, checkinYear);
-        const expectedCheckInDate = `${checkinMonth}/${checkinDay}/${checkinYear}`;
-        const availableCheckinDay = await getElementAttributeFromList(checkInDaysList, expectedAttValue, expectedCheckInDate);
-        await availableCheckinDay.click();
-        // const checkInDaysCount = await checkInDaysList.count();
-        // for(let i = 0; i < checkInDaysCount - 1; i++){
-        //     const day = await checkInDaysList.nth(i).getAttribute('data-is-day-blocked');
-        //     if(day !== 'false'){
-        //         const availableCheckinDay = await getElementAttributeFromList(checkInDaysList, expectedAttValue, expectedCheckInDate);
-        //         await availableCheckinDay.click();
-        //     }
-        // }
-
+        await this.selectDate(pageName, checkinOptions);
         // Check out
-        const { day: checkoutDay, month: checkoutMonth, year: checkoutYear } = checkoutOptions;
-        const checkOutDaysList = await this.getDaysList(checkoutMonth, checkoutYear);
-        const expectedCheckOutDate = `${checkoutMonth}/${checkoutDay}/${checkoutYear}`;
-        // const checkOutDaysCount = await checkOutDaysList.count();
-        // for(let i = 0; i < checkOutDaysCount - 1; i++){
-        //     const day = await checkOutDaysList.nth(i).getAttribute('data-is-day-blocked');
-        //     if(day !== 'false'){
-        //         const availableCheckOutDay = await getElementAttributeFromList(checkOutDaysList, expectedAttValue, expectedCheckOutDate);
-        //         await availableCheckOutDay.click();
-        //     }
-        // }
-        const availableCheckOutDay = await getElementAttributeFromList(checkOutDaysList, expectedAttValue, expectedCheckOutDate);
-        await availableCheckOutDay.click();
+        await this.selectDate(pageName, checkoutOptions);
+    }
 
+    getDatePickerElementsByPage(pageName) {
+        const datePickerElements = {
+            [pagesNameList.mainPage]: {
+                containerLocator: this.mainPageDatePickerContainer,
+                closeModalButton: '' // Add the correct close modal button here
+            },
+            [pagesNameList.listingPage]: {
+                containerLocator: this.listingPageDatePickerContainer,
+                closeModalButton: this.listingPageCloseModal
+            },
+            'default': {
+                containerLocator: '',
+                closeModalButton: ''
+            }
+        };
+
+        return datePickerElements[pageName] || datePickerElements['default'];
+    }
+
+
+    async closeDatePickerModal(pageName) {
+        const {closeModalButton} = this.getDatePickerElementsByPage(pageName);
+        await closeModalButton.click();
+    }
+
+    async openDatePickerModal() {
+        await this.listingPageCheckInDate.click();
+    }
+
+    async getDaysList(pageName, month, year) {
+        const {containerLocator} = this.getDatePickerElementsByPage(pageName);
+        return containerLocator.locator(`div[data-testid^="calendar-day-${month}"][data-testid$="${year}"][data-is-day-blocked="false"]`);
+    }
+
+    async selectDate(pageName, options) {
+        const {day, month, year} = options;
+        const expectedAtt = 'data-testid';
+        const daysList = await this.getDaysList(pageName, month, year);
+        const expectedDate = `${month}/${day}/${year}`;
+        const expectedDayElement = await getElementAttributeFromList(daysList, expectedAtt, expectedDate);
+        await this.handleDaySelection(pageName, expectedDayElement);
+
+    };
+
+    async handleDaySelection(pageName, expectedDayElement) {
+        const expectedAtt = 'data-is-day-blocked';
+        if (expectedDayElement !== 'Element not found') {
+            const isDayBlocked = await expectedDayElement.getAttribute(expectedAtt);
+            if (isDayBlocked !== 'true') {
+                await expectedDayElement.click();
+            }
+        } else {
+            await this.closeDatePickerModal(pageName);
+        }
     }
 }
