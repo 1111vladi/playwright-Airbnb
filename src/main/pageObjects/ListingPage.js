@@ -33,8 +33,8 @@ export default class ListingPage {
         await this.reservationCardComponent.verifyDates(checkInDate, checkOutDate);
     }
 
-    async verifyReservationInfo(info) {
-        await this.reservationCardComponent.verifyReservationInfo(info);
+    async verifyReservationInfo(reservationDetails) {
+        await this.reservationCardComponent.verifyReservationInfo(pagesNameList.listingPage, reservationDetails);
     }
 
     async verifyReservationGuestsCount(guestsNum) {

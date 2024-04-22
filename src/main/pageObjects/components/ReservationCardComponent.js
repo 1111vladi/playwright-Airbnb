@@ -11,8 +11,6 @@ export default class ReservationCardComponent {
         this.reserveButton = this.headerInfo.locator('button[data-testid="homes-pdp-cta-btn"]');
         // Date picker component
         this.datePickerComponent = new DatePickerComponent(page);
-        this.checkInDate = this.headerInfo.locator(this.datePickerComponent.listingPageCheckInDate);
-        this.checkOutDate = this.headerInfo.locator(this.datePickerComponent.listingPageCheckOutDate);
         // GuestsComponent
         this.guestsComponent = new GuestsComponent(page);
         this.guestsMainInfo = this.guestsComponent.reservationGuestsMainInfo;
@@ -66,28 +64,13 @@ export default class ReservationCardComponent {
         await this.reserveButton.click();
     }
 
-    getModifiedDateFormat(date){
-        return `${Math.floor(date.month)}/${Math.floor(date.day)}/${date.year}`
+    async verifyDates(pageName, checkInDate, checkOutDate) {
+        await this.datePickerComponent.verifyDates(pageName, checkInDate, checkOutDate)
     }
 
-    async verifyCheckInDate(checkInDate){
-        const expectedDate = this.getModifiedDateFormat(checkInDate);
-        await expect(this.checkInDate).toHaveText(expectedDate);
-    }
-
-    async verifyCheckOutDate(checkOutDate){
-        const expectedDate = this.getModifiedDateFormat(checkOutDate);
-        await expect(this.checkOutDate).toHaveText(expectedDate);
-    }
-
-    async verifyDates(checkInDate, checkOutDate) {
-        await this.verifyCheckInDate(checkInDate);
-        await this.verifyCheckOutDate(checkOutDate);
-    }
-
-    async verifyReservationInfo(info) {
-        const {checkInDate, checkOutDate, totalGuestsCount} = info;
-        await this.verifyDates(checkInDate, checkOutDate);
+    async verifyReservationInfo(pageName, reservationDetails) {
+        const {checkInDate, checkOutDate, totalGuestsCount} = reservationDetails;
+        await this.verifyDates(pageName, checkInDate, checkOutDate);
         await this.verifyReservationGuestsCount(totalGuestsCount);
     }
 

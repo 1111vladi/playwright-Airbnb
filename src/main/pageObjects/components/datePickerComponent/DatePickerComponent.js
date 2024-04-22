@@ -1,5 +1,6 @@
 import {getElementAttributeFromList} from "../../../extensions/uiActions";
 import {pagesNameList} from "../../../utilities/constants";
+import {expect} from "@playwright/test";
 
 export default class DatePickerComponent {
 
@@ -23,19 +24,19 @@ export default class DatePickerComponent {
         await this.selectDate(pageName, checkoutOptions);
     }
 
-    getDatePickerElementsByPage(pageName) {
+    getDatePickerLocatorsByPage(pageName) {
         const datePickerElements = {
             [pagesNameList.mainPage]: {
-                containerLocator: this.mainPageDatePickerContainer,
+                container: this.mainPageDatePickerContainer,
+                checkInDate: this.mainPageCheckInDate,
+                checkOutDate: this.mainPageCheckOutDate,
                 closeModalButton: '' // Add the correct close modal button here
             },
             [pagesNameList.listingPage]: {
-                containerLocator: this.listingPageDatePickerContainer,
+                container: this.listingPageDatePickerContainer,
+                checkInDate: this.listingPageCheckInDate,
+                checkOutDate: this.listingPageCheckOutDate,
                 closeModalButton: this.listingPageCloseModal
-            },
-            'default': {
-                containerLocator: '',
-                closeModalButton: ''
             }
         };
 
@@ -44,7 +45,7 @@ export default class DatePickerComponent {
 
 
     async closeDatePickerModal(pageName) {
-        const {closeModalButton} = this.getDatePickerElementsByPage(pageName);
+        const {closeModalButton} = this.getDatePickerLocatorsByPage(pageName);
         await closeModalButton.click();
     }
 
@@ -53,8 +54,8 @@ export default class DatePickerComponent {
     }
 
     async getDaysList(pageName, month, year) {
-        const {containerLocator} = this.getDatePickerElementsByPage(pageName);
-        return containerLocator.locator(`div[data-testid^="calendar-day-${month}"][data-testid$="${year}"][data-is-day-blocked="false"]`);
+        const {container} = this.getDatePickerLocatorsByPage(pageName);
+        return container.locator(`div[data-testid^="calendar-day-${month}"][data-testid$="${year}"][data-is-day-blocked="false"]`);
     }
 
     async selectDate(pageName, options) {
@@ -77,5 +78,26 @@ export default class DatePickerComponent {
         } else {
             await this.closeDatePickerModal(pageName);
         }
+    }
+
+    getModifiedDateFormat(date){
+        return `${Math.floor(date.month)}/${Math.floor(date.day)}/${date.year}`
+    }
+
+    async verifyCheckInDate(pageName, expectedDate){
+        const {checkInDate} = this.getDatePickerLocatorsByPage(pageName);
+        const modifiedExpectedDate = this.getModifiedDateFormat(expectedDate);
+        await expect(checkInDate).toHaveText(modifiedExpectedDate);
+    }
+
+    async verifyCheckOutDate(pageName, expectedDate){
+        const {checkOutDate} = this.getDatePickerLocatorsByPage(pageName);
+        const modifiedExpectedDate = this.getModifiedDateFormat(expectedDate);
+        await expect(checkOutDate).toHaveText(modifiedExpectedDate);
+    }
+
+    async verifyDates(pageName, checkInDate, checkOutDate) {
+        await this.verifyCheckInDate(pageName, checkInDate);
+        await this.verifyCheckOutDate(pageName, checkOutDate);
     }
 }
