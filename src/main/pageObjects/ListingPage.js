@@ -1,5 +1,4 @@
 import {expect} from "@playwright/test";
-import {verifyExistenceElement} from "../extensions/verifications";
 import ReservationCardComponent from "./components/ReservationCardComponent";
 import GuestsComponent from "./components/GuestsComponent";
 import DatePickerComponent from "./components/datePickerComponent/DatePickerComponent";
