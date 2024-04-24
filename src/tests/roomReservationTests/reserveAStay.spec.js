@@ -62,7 +62,7 @@ test.describe("Reservation Process @Web", () => {
 
     test('Adjust and Verify Guest Count', async () => {
         await listingPage.guestsSetter(updatedChildrenCount);
-        await listingPage.verifyReservationGuestsCount(2);
+        await listingPage.verifyGuestsCount(2);
     });
 
     test('Change Booking Dates', async () => {

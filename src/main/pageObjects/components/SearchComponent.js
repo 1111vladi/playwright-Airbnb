@@ -4,7 +4,6 @@ export default class SearchComponent {
 
     constructor(page){
         this.page = page;
-        this.searchTabPanel = this.page.locator('div[id="search-tabpanel"]');
         this.searchField = this.page.locator('input[id = "bigsearch-query-location-input"]');
         this.clearSearchFieldButton = this.page.locator('button[aria-label= "Clear Input"]');
         this.searchButton = this.page.locator('button[data-testid = "structured-search-input-search-button"]');

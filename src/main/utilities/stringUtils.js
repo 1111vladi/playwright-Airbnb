@@ -1,8 +1,7 @@
-export const addLeadingZero = (number) => {
-    if (isNaN(number) || number < 0) {
-        return "Invalid input";
-    }
+import {numValidationCheck} from "./numUtils";
 
+export const addLeadingZero = (number) => {
+    numValidationCheck(number);
     const integerNumber = Math.floor(number);
 
     if (integerNumber < 10) {

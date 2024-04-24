@@ -1,14 +1,11 @@
 import {expect} from "@playwright/test";
 import ReservationCardComponent from "./components/ReservationCardComponent";
-import GuestsComponent from "./components/GuestsComponent";
-import DatePickerComponent from "./components/datePickerComponent/DatePickerComponent";
 import {pagesNameList} from "../utilities/constants";
 
 export default class ListingPage {
     constructor(page) {
         this.page = page;
         this.reservationCardComponent = new ReservationCardComponent(page);
-        this.guestsComponent = new GuestsComponent(page);
         this.roomHeader = this.page.locator('div[data-section-id="TITLE_DEFAULT"]');
         this.translatePopupCloseButton = this.page.locator('div[data-testid = "modal-container"] button[aria-label="Close"]');
     }
@@ -27,29 +24,16 @@ export default class ListingPage {
         }
     }
 
-    async verifyDates(dates){
-        const {checkInDate, checkOutDate } = dates
-        await this.reservationCardComponent.verifyDates(checkInDate, checkOutDate);
-    }
-
     async verifyReservationInfo(reservationDetails) {
         await this.reservationCardComponent.verifyReservationInfo(pagesNameList.listingPage, reservationDetails);
     }
 
-    async verifyReservationGuestsCount(guestsNum) {
-        const guestsCountElem = await this.reservationCardComponent.guestsMainInfo.locator('span');
-        await expect(guestsCountElem).toHaveText(`${guestsNum} guests`);
+    async verifyGuestsCount(guestsNum) {
+        await this.reservationCardComponent.verifyGuestsCount(pagesNameList.listingPage, guestsNum);
     }
 
     async guestsSetter(guests) {
-        await this.reservationCardComponent.openGuestsInfo();
-        for (const { type, count } of Object.values(guests)) {
-            const currentGuest = await this.reservationCardComponent.getGuestsNumPerType(type);
-            let guestsSetterNum = this.guestsComponent.calculateGuestsSetterNum(count, currentGuest.count);
-            const actionType = await this.reservationCardComponent.getActionTypeByGuest(type, count, currentGuest.count);
-            await this.guestsComponent.setGuests(actionType, guestsSetterNum);
-        }
-        await this.guestsComponent.closeGuestsModal();
+        await this.reservationCardComponent.guestsSetter(pagesNameList.listingPage, guests)
     }
 
     async clickReserve(){

@@ -15,6 +15,8 @@ export default class DatePickerComponent {
         this.listingPageCheckInDate = this.page.locator('div[data-testid="change-dates-checkIn"]');
         this.listingPageCheckOutDate = this.page.locator('div[data-testid="change-dates-checkOut"]');
         this.listingPageCloseModal = this.page.locator('button[data-testid="availability-calendar-save"]');
+        // Cache
+        this.datePickerLocatorsCache = {};
     }
 
     async datePicker(pageName, checkinOptions, checkoutOptions) {
@@ -25,6 +27,10 @@ export default class DatePickerComponent {
     }
 
     getDatePickerLocatorsByPage(pageName) {
+        if (this.datePickerLocatorsCache[pageName]) {
+            return this.datePickerLocatorsCache[pageName];
+        }
+
         const datePickerElements = {
             [pagesNameList.mainPage]: {
                 container: this.mainPageDatePickerContainer,
@@ -40,7 +46,8 @@ export default class DatePickerComponent {
             }
         };
 
-        return datePickerElements[pageName] || datePickerElements['default'];
+        this.datePickerLocatorsCache[pageName] = datePickerElements[pageName];
+        return datePickerElements[pageName];
     }
 
 

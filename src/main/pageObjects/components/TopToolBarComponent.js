@@ -23,21 +23,15 @@ export default class TopToolBarComponent {
         await this.searchComponent.clickSearchButton();
     }
 
-    async guestsSetter(guests) {
-        await this.guestsComponent.openGuestsPanel();
-        for (const {type, count} of Object.values(guests)) {
-            const currentGuest = await this.guestsComponent.getGuestsNumPerType(type);
-            let guestsSetterNum = this.guestsComponent.calculateGuestsSetterNum(count, currentGuest.count);
-            const actionType = await this.guestsComponent.getActionTypeByGuest(type, count, currentGuest.count);
-            await this.guestsComponent.setGuests(actionType, guestsSetterNum);
-        }
+    async guestsSetter(pageName, guests) {
+        await this.guestsComponent.guestsSetter(pageName, guests);
     }
 
     async searchForAStay(pageName, stayDetails) {
         const {destination, checkInDate, checkOutDate, guests} = stayDetails;
         await this.destinationPicker(destination);
         await this.datePicker(pageName, checkInDate, checkOutDate);
-        await this.guestsSetter(guests);
+        await this.guestsSetter(pageName, guests);
         await this.clickSearchButton();
     }
 }

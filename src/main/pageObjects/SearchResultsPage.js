@@ -44,7 +44,6 @@ export default class SearchResultsPage {
 
     }
 
-    // Would be better to pass an object with the desired info about the room
     async getCurrentPageRoomResults() {
         const currentRoomResults = [];
         for (let i = 0; i < await this.cardRatingList.count() - 1; i++) {

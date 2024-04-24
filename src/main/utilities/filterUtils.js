@@ -1,8 +1,8 @@
-import {flatten, sortBy, findIndex} from "lodash";
+import {flatten, sortBy} from "lodash";
 
 export const getHighestRatedRoomObj = (list) => {
     const flattenedArray = flatten(list);
-    const sortedArray = sortBy(flattenedArray, obj => -parseFloat(obj.rating)); // Sort by rating as a number
+    const sortedArray = sortBy(flattenedArray, obj => -parseFloat(obj.rating));
     const highestRated = sortedArray[0];
     const { pageIndex, roomIndex } = getHighestRatedPosition(list, highestRated);
 

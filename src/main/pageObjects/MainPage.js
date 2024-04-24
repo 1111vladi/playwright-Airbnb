@@ -20,7 +20,7 @@ export default class MainPage {
     }
 
     async guestsSetter(guests) {
-        await this.topToolBarComponent.guestsSetter(guests);
+        await this.topToolBarComponent.guestsSetter(pagesNameList.mainPage, guests);
     }
 
     async searchForAStay(stayDetails) {

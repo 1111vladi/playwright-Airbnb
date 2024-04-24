@@ -2,7 +2,7 @@ import {modifyDateByOperation} from "../momentUtils";
 import {guestsTypeList} from "../constants";
 const checkInDate = modifyDateByOperation(1, 0, 0, 'add');
 const checkOutDate = modifyDateByOperation(3, 0, 0, 'add');
-const updatedCheckInDate = modifyDateByOperation(1, 0, 0, 'add');
+const updatedCheckInDate = modifyDateByOperation(2, 0, 0, 'add');
 const updatedCheckOutDate = modifyDateByOperation(4, 0, 0, 'add');
 const myDestination = 'Amsterdam, Netherlands';
 const adultCount = 2;
