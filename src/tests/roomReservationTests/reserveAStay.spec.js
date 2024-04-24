@@ -2,7 +2,7 @@ import {test} from "@playwright/test";
 import POManager from "../../main/pageObjects/POManager";
 import {data, updatedChildrenCount, updatedDates} from '../../main/utilities/testData/reserveAStayTestData'
 import {getNewPageContext} from "../../main/extensions/uiActions";
-import {setup, teardown} from "../../main/utilities/commonOps";
+import {startSession} from "../../main/utilities/commonOps";
 
 let mainPage, searchResultsPage, listingPage, reservationPage;
 let page, context, poManager;
@@ -10,7 +10,7 @@ let highestRatedRoom;
 test.describe.configure({ mode: 'serial' })
 
 test.beforeAll(async ({browser}) => {
-    ({page, context} = await setup({browser}));
+    ({page, context} = await startSession({browser}));
     poManager = new POManager(page);
     mainPage = poManager.getMainPage();
     searchResultsPage = poManager.getSearchResultsPage();
@@ -28,10 +28,6 @@ test.afterEach(async ({}, testInfo) => {
     if(testInfo.title === 'Change Booking Dates'){
         await listingPage.clickReserve();
     }
-});
-
-test.afterAll(async ({browser}) => {
-    await teardown({browser});
 });
 
 test.describe("Reservation Process @Web", () => {

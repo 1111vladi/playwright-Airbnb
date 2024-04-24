@@ -38,6 +38,15 @@ module.exports = defineConfig({
     /* Configure projects for major browsers */
     projects: [
         {
+            name: 'setup',
+            testMatch: /global\.setup\.js/,
+            teardown: 'teardown'
+        },
+        {
+            name: 'teardown',
+            testMatch: /global\.teardown\.js/,
+        },
+        {
             name: 'chromium',
             use: {
                 baseURL: baseUrl,
@@ -48,6 +57,7 @@ module.exports = defineConfig({
                 },
                 viewport: null,
             },
+            dependencies: ['setup']
         },
 
         {
