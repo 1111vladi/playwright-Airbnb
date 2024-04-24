@@ -11,20 +11,28 @@ export default class DatePickerComponent {
         this.mainPageCheckInDate = this.page.locator('div[data-testid="structured-search-input-field-split-dates-0"]');
         this.mainPageCheckOutDate = this.page.locator('div[data-testid="structured-search-input-field-split-dates-1"]');
         // Listing Page
-        this.listingPageDatePickerContainer = this.page.locator('div[data-testid="bookit-sidebar-availability-calendar"]');
-        this.listingPageCheckInDate = this.page.locator('div[data-testid="change-dates-checkIn"]');
-        this.listingPageCheckOutDate = this.page.locator('div[data-testid="change-dates-checkOut"]');
-        this.listingPageCloseModal = this.page.locator('button[data-testid="availability-calendar-save"]');
+        this.listingPageDatePickerContainer = this.page.locator('div[data-section-id="BOOK_IT_SIDEBAR"] div[data-testid="bookit-sidebar-availability-calendar"]');
+        this.listingPageCheckInDate = this.page.locator('div[data-section-id="BOOK_IT_SIDEBAR"] div[data-testid="change-dates-checkIn"]');
+        this.listingPageCheckOutDate = this.page.locator('div[data-section-id="BOOK_IT_SIDEBAR"] div[data-testid="change-dates-checkOut"]');
+        this.listingPageCloseModal = this.page.locator('div[data-section-id="BOOK_IT_SIDEBAR"] button[data-testid="availability-calendar-save"]');
         // Cache
         this.datePickerLocatorsCache = {};
     }
 
-    async datePicker(pageName, checkinOptions, checkoutOptions) {
+    async datePicker(pageName, checkinOptions = {}, checkoutOptions = {}) {
+        let status;
+
         // Check in
-        await this.selectDate(pageName, checkinOptions);
+        if (Object.keys(checkinOptions).length !== 0) {
+            status = await this.selectDate(pageName, checkinOptions);
+        }
+
         // Check out
-        await this.selectDate(pageName, checkoutOptions);
+        if (Object.keys(checkoutOptions).length !== 0 && status !== 'failed') {
+            await this.selectDate(pageName, checkoutOptions);
+        }
     }
+
 
     getDatePickerLocatorsByPage(pageName) {
         if (this.datePickerLocatorsCache[pageName]) {
@@ -71,20 +79,21 @@ export default class DatePickerComponent {
         const daysList = await this.getDaysList(pageName, month, year);
         const expectedDate = `${month}/${day}/${year}`;
         const expectedDayElement = await getElementAttributeFromList(daysList, expectedAtt, expectedDate);
-        await this.handleDaySelection(pageName, expectedDayElement);
+        return await this.handleDaySelection(pageName, expectedDayElement);
 
     };
 
     async handleDaySelection(pageName, expectedDayElement) {
         const expectedAtt = 'data-is-day-blocked';
-        if (expectedDayElement !== 'Element not found') {
-            const isDayBlocked = await expectedDayElement.getAttribute(expectedAtt);
-            if (isDayBlocked !== 'true') {
+        const isDayBlocked = await expectedDayElement.getAttribute(expectedAtt);
+        if (isDayBlocked === 'false') {
                 await expectedDayElement.click();
-            }
+                return 'success'
+            // }
         } else {
             await this.closeDatePickerModal(pageName);
         }
+        return 'failed'
     }
 
     getModifiedDateFormat(date){

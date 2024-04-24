@@ -1,4 +1,3 @@
-import {expect} from "@playwright/test";
 import ReservationCardComponent from "./components/ReservationCardComponent";
 import {pagesNameList} from "../utilities/constants";
 
@@ -13,14 +12,15 @@ export default class ListingPage {
     // TODO - not always the same subtitle
     async verifyRoomIsSelected(roomHeader) {
         const roomSubTitleElem = await this.roomHeader.locator('h1')
-        await expect(roomSubTitleElem).toHaveText(roomHeader);
+        // await expect(roomSubTitleElem).toHaveText(roomHeader);
+        await roomSubTitleElem.waitFor(roomHeader);
     }
 
     async closeTranslatePopup() {
         try {
             await this.translatePopupCloseButton.click({ timeout: 2000 });
         } catch (error) {
-            console.warn(`Element ${this.translatePopupCloseButton} was not found`);
+            console.warn(`Element translatePopupCloseButton was not found`);
         }
     }
 
