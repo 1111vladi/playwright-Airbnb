@@ -12,31 +12,33 @@ export const getElementAttributeFromList = async (elements, attName, expectedVal
 };
 
 
-export const getElementTextFromList = async(elements, expectedValue) => {
+export const getElementTextFromList = async (elements, expectedValue) => {
     const elementsCount = await getElementsCount(elements);
-    for (let i = 0; i < elementsCount - 1; i++) {
+    for (let i = 0; i < elementsCount; i++) {
         const element = await elements.nth(i);
-        const expectedElement = await element.textContent();
-        if (expectedElement.includes(expectedValue)) {
+        const elementText = await element.textContent();
+        if (elementText.includes(expectedValue)) {
             return element;
         }
     }
+    throw new Error('No matching element text');
 }
 
-export const waitForAll = async(iterations, elementsToWaitFor) => {
+
+export const waitForAll = async (iterations, elementsToWaitFor) => {
     await elementsToWaitFor.first().waitFor();
     for (let i = 0; i < iterations - 1; i++) {
         await elementsToWaitFor.nth(i).waitFor();
     }
 }
 
-export const getElementsCount = async(elements) => {
+export const getElementsCount = async (elements) => {
     await elements.first().waitFor();
     return await elements.count();
 }
 
 // Would be better to go with a loop over and check the page title
-export const getNewPageContext = async(context) => {
+export const getNewPageContext = async (context) => {
     const pagePromise = context.waitForEvent('page');
     return await pagePromise;
 }

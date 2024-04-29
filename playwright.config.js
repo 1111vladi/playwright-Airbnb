@@ -12,7 +12,7 @@ const baseUrl = 'https://www.airbnb.com';
  */
 module.exports = defineConfig({
     testDir: './src/tests',
-    timeout: 20000,
+    timeout: 80000,
     expect: {
         timeout: 2000,
     },

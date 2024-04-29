@@ -3,13 +3,12 @@ import {getElementsCount} from "./uiActions";
 
 export const verifyMultipleElementsVisible = async(elements) => {
     const elementsCount = await getElementsCount(elements);
-    for (let i = 0; i < elementsCount - 2; i++) {
+    for (let i = 0; i < elementsCount - 1; i++) {
         const element = await elements.nth(i);
         await expect(element).toBeVisible();
     }
 }
 
-// TODO - modify
 export const verifyExistenceElement = async (toExist, element) => {
     try {
         if (toExist) {

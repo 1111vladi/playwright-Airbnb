@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test reserveAStay.spec.js --project=chromium --workers=1 --headed",
+    "test": "npx playwright test --project=chromium --workers=4 --headed",
+    "testTag": "npx playwright test --project=chromium --workers=1 --headed --grep reserveStay",
     "allTests": "npx playwright test",
     "allureTest": "npx playwright test reserveAStay.spec.js --project=chromium --workers=1 --headed --reporter=line,allure-playwright ",
-    "openUi": "npx playwright test --ui",
-    "showReport": "npx playwright show-report",
+    "ui": "npx playwright test --ui",
+    "report": "npx playwright show-report",
     "generateAllure": "allure generate ./allure-results --clean",
     "allureReport": "allure open ./allure-report"
   },

@@ -9,6 +9,17 @@ export default class ListingPage {
         this.translatePopupCloseButton = this.page.locator('div[data-testid = "modal-container"] button[aria-label="Close"]');
     }
 
+    getPageUrl(options){
+        const { roomTitleID, destination, adultsCount, childrenCount, checkinDate, checkoutDate } = options;
+        return `https://www.airbnb.com/rooms/${roomTitleID}?check_in=${checkinDate}&check_out=${checkoutDate}&adults=${adultsCount}&children=${childrenCount}&query=${destination}`
+    }
+
+    async navigateToPageUrl(options){
+        const url = this.getPageUrl(options);
+        await this.page.goto(url);
+
+    }
+
     // TODO - not always the same subtitle
     async verifyRoomIsSelected(roomHeader) {
         const roomSubTitleElem = await this.roomHeader.locator('h1')

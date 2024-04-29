@@ -17,6 +17,30 @@ export default class SearchResultsPage {
         this.cardSubtitleList = this.cardComponent.getCardSubtitleList();
     }
 
+    getPageUrl(options){
+        const { destination, adultsCount, childrenCount, checkinDate, checkoutDate } = options;
+        return `https://www.airbnb.com/s/homes?checkin=${checkinDate}&checkout=${checkoutDate}&adults=${adultsCount}&children=${childrenCount}&query=${destination}`
+    }
+
+    async navigateToPageUrl(options){
+        const url = this.getPageUrl(options);
+        console.log('url: ', url);
+        await this.page.goto(url);
+    }
+
+    async selectFirstRoom(){
+        await this.cardNameList.first().waitFor();
+        const firstElem = await this.cardNameList.first();
+        await firstElem.click({force: true});
+    }
+
+    async getFirstRoomID(){
+        await this.cardNameList.first().waitFor();
+        const roomID = await this.cardNameList.first().getAttribute('id');
+        const roomIDArr = roomID.split('_');
+        return roomIDArr[roomIDArr.length - 1];
+    }
+
     async navigateNextPage() {
         await this.navigationComponent.navigateNextPage();
     }
@@ -32,14 +56,16 @@ export default class SearchResultsPage {
             if (roomResults.status === 'success' && roomResults.rating === maxRoomRating) {
                 return roomResults;
             }
+        console.log('roomResults.allPagesRoomResults: ', roomResults.allPagesRoomResults);
             const highestRatedRoomObj = getHighestRatedRoomObj(roomResults.allPagesRoomResults);
             const roomId = highestRatedRoomObj.id;
-            const goBackCount = roomResults.currentPagesCount - 1 - highestRatedRoomObj.pageIndex;
-            for (let i = 0; i < goBackCount; i++) {
-                await this.page.goBack();
-            }
-            const highestRatedRoom = await this.page.locator(`#${roomId}`);
-            await highestRatedRoom.click({force: true});
+            // const goBackCount = roomResults.currentPagesCount - 1 - highestRatedRoomObj.pageIndex;
+            // for (let i = 0; i < goBackCount; i++) {
+            //     await this.page.goBack();
+            // }
+            return highestRatedRoomObj;
+            // const highestRatedRoom = await this.page.locator(`#${roomId}`);
+            // await highestRatedRoom.click({force: true});
         // });
 
     }
@@ -56,12 +82,12 @@ export default class SearchResultsPage {
             const actualRating = (roomRatingTextList.split(' '))[0];
             // Remove if wanting to iterate over all pages regardless
             if (actualRating === maxRoomRating) {
-                await (await this.page.locator(`#${roomIDList}`)).click({force: true});
+                // await (await this.page.locator(`#${roomIDList}`)).click({force: true});
                 return {
                     id: roomIDList,
                     status: 'success',
-                    roomName: roomNameTextList[i],
-                    subTitle: roomSubtitleTextList[i],
+                    // roomName: roomNameTextList[i],
+                    // subTitle: roomSubtitleTextList[i],
                     rating: actualRating
                 };
             }
@@ -84,7 +110,8 @@ export default class SearchResultsPage {
             if (i !== 0) {
                 await this.navigateNextPage();
             }
-
+            await this.page.waitForLoadState('networkidle', {timeout: 10000});
+            console.log(`Page ${i}: rooms counts:`, await this.cardList.count())
             await waitForAll(await this.cardList.count(), this.cardNameList);
 
             results = await this.getCurrentPageRoomResults();

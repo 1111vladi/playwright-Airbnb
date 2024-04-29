@@ -12,7 +12,7 @@ export const getHighestRatedRoomObj = (list) => {
         id: highestRated.id,
         roomName: highestRated.roomName,
         subtitle: highestRated.subtitle,
-        roomRating: parseFloat(highestRated.rating),
+        roomRating: highestRated.rating,
         pageIndex
     };
 };
